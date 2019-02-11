@@ -28,12 +28,19 @@ bool TensorNet::LoadNetwork(const char* prototxt_path,
     {
         printf( "cache file not found, profiling network model\n");
 
-        if( !caffeToTRTModel(prototxt_path, model_path, output_blobs, maxBatchSize, gieModelStdStream) )
-        {
-            printf("failed to load %s\n", model_path);
-            return 0;
+        // if( !caffeToTRTModel(prototxt_path, model_path, output_blobs, maxBatchSize, gieModelStdStream) )
+        // {
+        //     printf("failed to load %s\n", model_path);
+        //     return 0;
+        // }
+        bool load = caffeToTRTModel(prototxt_path, model_path, output_blobs, maxBatchSize, gieModelStdStream);
+        if(!load){
+             printf("failed to load %s\n", model_path);
+             return 0;
+        }else{
+            printf( "network profiling complete, writing cache to %s\n", cache_path);
         }
-        printf( "network profiling complete, writing cache to %s\n", cache_path);
+        
         std::ofstream outFile;
         outFile.open(cache_path);
         outFile << gieModelStdStream.rdbuf();
