@@ -1,5 +1,5 @@
 #include <algorithm>
-//#include "common.h"
+#include "common.h"
 #include "tensorNet.h"
 #include <sstream>
 #include <fstream>
@@ -90,16 +90,18 @@ bool TensorNet::caffeToTRTModel(const char* deployFile,
     //    builder->setAverageFindIterations(2);
     ICaffeParser* parser = createCaffeParser();
     parser->setPluginFactory(&pluginFactory);
-
-    bool useFp16 = builder->platformHasFastFp16();
+    //builder->setFp16Mode(true);
+    bool useFp16 = true;//builder->platformHasFastFp16();
     //@Seojin to fp16 
-    useFp16 = true; 
+    //useFp16 = true; 
 
     DataType modelDataType = useFp16 ? DataType::kHALF : DataType::kFLOAT;
+ 
+    //modelDataType = DataType::kHALF;
 
-    std::cout << deployFile <<std::endl;
-    std::cout << modelFile <<std::endl;
-    std::cout << useFp16 <<std::endl;
+   // std::cout << deployFile <<std::endl;
+   // std::cout << modelFile <<std::endl;
+    //std::cout << useFp16 <<std::endl;
 
     const IBlobNameToTensor* blobNameToTensor =	parser->parse(deployFile,
                                                               modelFile,
@@ -114,6 +116,8 @@ bool TensorNet::caffeToTRTModel(const char* deployFile,
     if(useFp16)
     {
         builder->setHalf2Mode(true);
+	std::cout <<"Use FP16 Mode:" << useFp16 <<std::endl;
+
     }
     ICudaEngine* engine = builder->buildCudaEngine( *network );
     assert(engine);

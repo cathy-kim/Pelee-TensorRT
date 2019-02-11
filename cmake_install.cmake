@@ -37,11 +37,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaMappedMemory.h")
-endif()
-
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaYUV.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaOverlay.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -49,15 +45,19 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaNormalize.h")
-endif()
-
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaRGB.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaOverlay.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaYUV.h")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaMappedMemory.h")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaNormalize.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
