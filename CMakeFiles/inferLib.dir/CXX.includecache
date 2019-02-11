@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/nvidia/MobileNet-SSD-TensorRT/common.cpp
+/home/nvidia/Pelee-TensorRT/common.cpp
 common.h
-/home/nvidia/MobileNet-SSD-TensorRT/common.h
+/home/nvidia/Pelee-TensorRT/common.h
 
-/home/nvidia/MobileNet-SSD-TensorRT/common.h
+/home/nvidia/Pelee-TensorRT/common.h
 NvInfer.h
-/home/nvidia/MobileNet-SSD-TensorRT/NvInfer.h
+/home/nvidia/Pelee-TensorRT/NvInfer.h
 string
 -
 vector
@@ -36,7 +36,7 @@ opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
 -
 
-/home/nvidia/MobileNet-SSD-TensorRT/cudaUtility.h
+/home/nvidia/Pelee-TensorRT/cudaUtility.h
 cuda_runtime.h
 -
 cuda.h
@@ -46,7 +46,7 @@ stdio.h
 string.h
 -
 
-/home/nvidia/MobileNet-SSD-TensorRT/imageBuffer.h
+/home/nvidia/Pelee-TensorRT/imageBuffer.h
 opencv2/opencv.hpp
 -
 mutex
@@ -56,31 +56,31 @@ condition_variable
 queue
 -
 
-/home/nvidia/MobileNet-SSD-TensorRT/main.cpp
+/home/nvidia/Pelee-TensorRT/main.cpp
 common.h
-/home/nvidia/MobileNet-SSD-TensorRT/common.h
+/home/nvidia/Pelee-TensorRT/common.h
 cudaUtility.h
-/home/nvidia/MobileNet-SSD-TensorRT/cudaUtility.h
+/home/nvidia/Pelee-TensorRT/cudaUtility.h
 mathFunctions.h
-/home/nvidia/MobileNet-SSD-TensorRT/mathFunctions.h
+/home/nvidia/Pelee-TensorRT/mathFunctions.h
 pluginImplement.h
-/home/nvidia/MobileNet-SSD-TensorRT/pluginImplement.h
+/home/nvidia/Pelee-TensorRT/pluginImplement.h
 tensorNet.h
-/home/nvidia/MobileNet-SSD-TensorRT/tensorNet.h
+/home/nvidia/Pelee-TensorRT/tensorNet.h
 loadImage.h
-/home/nvidia/MobileNet-SSD-TensorRT/loadImage.h
+/home/nvidia/Pelee-TensorRT/loadImage.h
 imageBuffer.h
-/home/nvidia/MobileNet-SSD-TensorRT/imageBuffer.h
+/home/nvidia/Pelee-TensorRT/imageBuffer.h
 chrono
 -
 thread
 -
 
-/home/nvidia/MobileNet-SSD-TensorRT/mathFunctions.cpp
+/home/nvidia/Pelee-TensorRT/mathFunctions.cpp
 mathFunctions.h
-/home/nvidia/MobileNet-SSD-TensorRT/mathFunctions.h
+/home/nvidia/Pelee-TensorRT/mathFunctions.h
 
-/home/nvidia/MobileNet-SSD-TensorRT/mathFunctions.h
+/home/nvidia/Pelee-TensorRT/mathFunctions.h
 stdint.h
 -
 cmath
@@ -104,17 +104,19 @@ algorithm
 glog/logging.h
 -
 
-/home/nvidia/MobileNet-SSD-TensorRT/pluginImplement.cpp
+/home/nvidia/Pelee-TensorRT/pluginImplement.cpp
 pluginImplement.h
-/home/nvidia/MobileNet-SSD-TensorRT/pluginImplement.h
+/home/nvidia/Pelee-TensorRT/pluginImplement.h
 mathFunctions.h
-/home/nvidia/MobileNet-SSD-TensorRT/mathFunctions.h
+/home/nvidia/Pelee-TensorRT/mathFunctions.h
 vector
 -
 algorithm
 -
 
-/home/nvidia/MobileNet-SSD-TensorRT/pluginImplement.h
+/home/nvidia/Pelee-TensorRT/pluginImplement.h
+memory
+-
 cassert
 -
 iostream
@@ -127,32 +129,30 @@ cuda_runtime.h
 -
 cublas_v2.h
 -
-memory
--
 NvCaffeParser.h
-/home/nvidia/MobileNet-SSD-TensorRT/NvCaffeParser.h
+/home/nvidia/Pelee-TensorRT/NvCaffeParser.h
 NvInferPlugin.h
-/home/nvidia/MobileNet-SSD-TensorRT/NvInferPlugin.h
+/home/nvidia/Pelee-TensorRT/NvInferPlugin.h
 
-/home/nvidia/MobileNet-SSD-TensorRT/tensorNet.cpp
+/home/nvidia/Pelee-TensorRT/tensorNet.cpp
 algorithm
 -
 tensorNet.h
-/home/nvidia/MobileNet-SSD-TensorRT/tensorNet.h
+/home/nvidia/Pelee-TensorRT/tensorNet.h
 sstream
 -
 fstream
 -
 
-/home/nvidia/MobileNet-SSD-TensorRT/tensorNet.h
+/home/nvidia/Pelee-TensorRT/tensorNet.h
 pluginImplement.h
-/home/nvidia/MobileNet-SSD-TensorRT/pluginImplement.h
+/home/nvidia/Pelee-TensorRT/pluginImplement.h
 
-/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaMappedMemory.h
+/home/nvidia/Pelee-TensorRT/util/cuda/cudaMappedMemory.h
 cudaUtility.h
-/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaUtility.h
+/home/nvidia/Pelee-TensorRT/util/cuda/cudaUtility.h
 
-/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaUtility.h
+/home/nvidia/Pelee-TensorRT/util/cuda/cudaUtility.h
 cuda_runtime.h
 -
 cuda.h
@@ -162,21 +162,21 @@ stdio.h
 string.h
 -
 
-/home/nvidia/MobileNet-SSD-TensorRT/util/loadImage.cpp
+/home/nvidia/Pelee-TensorRT/util/loadImage.cpp
 iostream
 -
 loadImage.h
-/home/nvidia/MobileNet-SSD-TensorRT/util/loadImage.h
+/home/nvidia/Pelee-TensorRT/util/loadImage.h
 ../util/cuda/cudaMappedMemory.h
-/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaMappedMemory.h
+/home/nvidia/Pelee-TensorRT/util/cuda/cudaMappedMemory.h
 opencv2/core/mat.hpp
 -
 
-/home/nvidia/MobileNet-SSD-TensorRT/util/loadImage.h
+/home/nvidia/Pelee-TensorRT/util/loadImage.h
 opencv2/core/mat.hpp
 -
 ../util/cuda/cudaUtility.h
-/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaUtility.h
+/home/nvidia/Pelee-TensorRT/util/cuda/cudaUtility.h
 
 /usr/local/cuda-9.0/include/builtin_types.h
 device_types.h

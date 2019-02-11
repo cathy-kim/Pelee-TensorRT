@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(mobileNet)
+project(pelee)
 
 #set(inference_VERSION_MAJOR 2)
 #set(inference_VERSION_MINOR 1)
@@ -74,5 +74,5 @@ foreach(include ${includes})
     install(FILES "${include}" DESTINATION include/inferLib)
 endforeach()
 
-add_executable(mobileNet main.cpp )
-target_link_libraries(mobileNet inferLib ${OpenCV_LIBS})
+add_executable(pelee main.cpp )
+target_link_libraries(pelee inferLib ${OpenCV_LIBS})

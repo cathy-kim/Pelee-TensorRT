@@ -1,4 +1,4 @@
-# Install script for directory: /home/nvidia/MobileNet-SSD-TensorRT
+# Install script for directory: /home/nvidia/Pelee-TensorRT
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,35 +33,35 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/MobileNet-SSD-TensorRT/util/loadImage.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/loadImage.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaMappedMemory.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaMappedMemory.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaYUV.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaYUV.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaResize.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaResize.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaNormalize.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaNormalize.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaRGB.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaRGB.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaOverlay.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaOverlay.h")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/MobileNet-SSD-TensorRT/util/cuda/cudaUtility.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/inferLib" TYPE FILE FILES "/home/nvidia/Pelee-TensorRT/util/cuda/cudaUtility.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -72,5 +72,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nvidia/MobileNet-SSD-TensorRT/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nvidia/Pelee-TensorRT/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

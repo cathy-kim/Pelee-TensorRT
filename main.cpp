@@ -9,8 +9,8 @@
 #include <thread>
 
 
-const char* model  = "/home/nvidia/MobileNet-SSD-TensorRT/model/MobileNetSSD_deploy_iplugin.prototxt";
-const char* weight = "/home/nvidia/MobileNet-SSD-TensorRT/model/MobileNetSSD_deploy.caffemodel";
+const char* model  = "/home/nvidia/Pelee-TensorRT/model/pelee/pelee_deploy_iplugin.prototxt";
+const char* weight = "/home/nvidia/Pelee-TensorRT/model/pelee/pelee_merged.caffemodel";
 
 const char* INPUT_BLOB_NAME = "data";
 
@@ -121,8 +121,9 @@ int main(int argc, char *argv[])
     void* imgCUDA;
     Timer timer;
 
-//    std::string imgFile = "../../testPic/test.jpg";
-//    frame = cv::imread(imgFile);
+    std::string imgFile = "../../testPic/test.jpg";
+    frame = cv::imread(imgFile);
+
     std::thread readTread(readPicture);
     readTread.detach();
     while(1){

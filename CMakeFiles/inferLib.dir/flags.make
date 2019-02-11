@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -fPIC
 
 CXX_DEFINES = -DinferLib_EXPORTS
 
-CXX_INCLUDES = -I/home/nvidia/MobileNet-SSD-TensorRT/build/include/util -I/home/nvidia/MobileNet-SSD-TensorRT/util -I/usr/include/opencv -I/usr/local/cuda-9.0/include 
+CXX_INCLUDES = -I/home/nvidia/Pelee-TensorRT/build/include/util -I/home/nvidia/Pelee-TensorRT/util -I/usr/include/opencv -I/usr/local/cuda-9.0/include 
 

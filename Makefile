@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nvidia/MobileNet-SSD-TensorRT
+CMAKE_SOURCE_DIR = /home/nvidia/Pelee-TensorRT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nvidia/MobileNet-SSD-TensorRT
+CMAKE_BINARY_DIR = /home/nvidia/Pelee-TensorRT
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,9 +124,9 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nvidia/Pelee-TensorRT/CMakeFiles /home/nvidia/Pelee-TensorRT/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nvidia/Pelee-TensorRT/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -168,17 +168,17 @@ inferLib/fast:
 .PHONY : inferLib/fast
 
 #=============================================================================
-# Target rules for targets named mobileNet
+# Target rules for targets named pelee
 
 # Build rule for target.
-mobileNet: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mobileNet
-.PHONY : mobileNet
+pelee: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pelee
+.PHONY : pelee
 
 # fast build rule for target.
-mobileNet/fast:
-	$(MAKE) -f CMakeFiles/mobileNet.dir/build.make CMakeFiles/mobileNet.dir/build
-.PHONY : mobileNet/fast
+pelee/fast:
+	$(MAKE) -f CMakeFiles/pelee.dir/build.make CMakeFiles/pelee.dir/build
+.PHONY : pelee/fast
 
 common.o: common.cpp.o
 
@@ -214,7 +214,7 @@ main.o: main.cpp.o
 # target to build an object file
 main.cpp.o:
 	$(MAKE) -f CMakeFiles/inferLib.dir/build.make CMakeFiles/inferLib.dir/main.cpp.o
-	$(MAKE) -f CMakeFiles/mobileNet.dir/build.make CMakeFiles/mobileNet.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/pelee.dir/build.make CMakeFiles/pelee.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -224,7 +224,7 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	$(MAKE) -f CMakeFiles/inferLib.dir/build.make CMakeFiles/inferLib.dir/main.cpp.i
-	$(MAKE) -f CMakeFiles/mobileNet.dir/build.make CMakeFiles/mobileNet.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/pelee.dir/build.make CMakeFiles/pelee.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -234,7 +234,7 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/inferLib.dir/build.make CMakeFiles/inferLib.dir/main.cpp.s
-	$(MAKE) -f CMakeFiles/mobileNet.dir/build.make CMakeFiles/mobileNet.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/pelee.dir/build.make CMakeFiles/pelee.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 mathFunctions.o: mathFunctions.cpp.o
@@ -356,7 +356,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... inferLib"
-	@echo "... mobileNet"
+	@echo "... pelee"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... common.o"

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nvidia/MobileNet-SSD-TensorRT
+CMAKE_SOURCE_DIR = /home/nvidia/Pelee-TensorRT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nvidia/MobileNet-SSD-TensorRT
+CMAKE_BINARY_DIR = /home/nvidia/Pelee-TensorRT
 
 # Include any dependencies generated for this target.
 include CMakeFiles/inferLib.dir/depend.make
@@ -278,9 +278,9 @@ CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/incl
 CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o.cmake
 CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: kernel.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o"
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -E make_directory /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir//.
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_kernel.cu.o -D generated_cubin_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_kernel.cu.o.cubin.txt -P /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir//inferLib_generated_kernel.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o"
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//.
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_kernel.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_kernel.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//inferLib_generated_kernel.cu.o.cmake
 
 CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: cudaUtility.h
 CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: mathFunctions.cu
@@ -549,9 +549,9 @@ CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9
 CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o.cmake
 CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: mathFunctions.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building NVCC (Device) object CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o"
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -E make_directory /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir//.
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_mathFunctions.cu.o -D generated_cubin_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_mathFunctions.cu.o.cubin.txt -P /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir//inferLib_generated_mathFunctions.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building NVCC (Device) object CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o"
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//.
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_mathFunctions.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_mathFunctions.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//inferLib_generated_mathFunctions.cu.o.cmake
 
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: util/cuda/cudaUtility.h
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: util/cuda/cudaYUV-YUYV.cu
@@ -691,9 +691,9 @@ CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/loc
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: util/cuda/cudaYUV-YUYV.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o"
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o -D generated_cubin_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o.cubin.txt -P /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o"
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o.cmake
 
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: util/cuda/cudaUtility.h
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: util/cuda/cudaYUV-YV12.cu
@@ -833,9 +833,9 @@ CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/loc
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: util/cuda/cudaYUV-YV12.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o"
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YV12.cu.o -D generated_cubin_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YV12.cu.o.cubin.txt -P /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o"
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YV12.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YV12.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o.cmake
 
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: util/cuda/cudaRGB.cu
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: util/cuda/cudaRGB.h
@@ -975,9 +975,9 @@ CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cu
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: util/cuda/cudaRGB.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o"
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaRGB.cu.o -D generated_cubin_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaRGB.cu.o.cubin.txt -P /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o"
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaRGB.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaRGB.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o.cmake
 
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: util/cuda/cudaResize.cu
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: util/cuda/cudaResize.h
@@ -1117,9 +1117,9 @@ CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: util/cuda/cudaResize.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o"
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaResize.cu.o -D generated_cubin_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaResize.cu.o.cubin.txt -P /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o"
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaResize.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaResize.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o.cmake
 
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: util/cuda/cudaNormalize.cu
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: util/cuda/cudaNormalize.h
@@ -1259,9 +1259,9 @@ CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/lo
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: util/cuda/cudaNormalize.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o"
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaNormalize.cu.o -D generated_cubin_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaNormalize.cu.o.cubin.txt -P /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o"
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaNormalize.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaNormalize.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o.cmake
 
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: util/cuda/cudaUtility.h
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: util/cuda/cudaYUV-NV12.cu
@@ -1401,9 +1401,9 @@ CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/loc
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: util/cuda/cudaYUV-NV12.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o"
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-NV12.cu.o -D generated_cubin_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-NV12.cu.o.cubin.txt -P /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o"
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-NV12.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-NV12.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o.cmake
 
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: util/cuda/cudaOverlay.cu
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: util/cuda/cudaOverlay.h
@@ -1543,22 +1543,22 @@ CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/loca
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: util/cuda/cudaOverlay.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o"
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaOverlay.cu.o -D generated_cubin_file:STRING=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaOverlay.cu.o.cubin.txt -P /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o"
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaOverlay.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaOverlay.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o.cmake
 
 CMakeFiles/inferLib.dir/pluginImplement.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/pluginImplement.cpp.o: pluginImplement.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/inferLib.dir/pluginImplement.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/pluginImplement.cpp.o -c /home/nvidia/MobileNet-SSD-TensorRT/pluginImplement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/inferLib.dir/pluginImplement.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/pluginImplement.cpp.o -c /home/nvidia/Pelee-TensorRT/pluginImplement.cpp
 
 CMakeFiles/inferLib.dir/pluginImplement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/pluginImplement.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/MobileNet-SSD-TensorRT/pluginImplement.cpp > CMakeFiles/inferLib.dir/pluginImplement.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/pluginImplement.cpp > CMakeFiles/inferLib.dir/pluginImplement.cpp.i
 
 CMakeFiles/inferLib.dir/pluginImplement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/pluginImplement.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/MobileNet-SSD-TensorRT/pluginImplement.cpp -o CMakeFiles/inferLib.dir/pluginImplement.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/pluginImplement.cpp -o CMakeFiles/inferLib.dir/pluginImplement.cpp.s
 
 CMakeFiles/inferLib.dir/pluginImplement.cpp.o.requires:
 
@@ -1573,16 +1573,16 @@ CMakeFiles/inferLib.dir/pluginImplement.cpp.o.provides.build: CMakeFiles/inferLi
 
 CMakeFiles/inferLib.dir/tensorNet.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/tensorNet.cpp.o: tensorNet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/inferLib.dir/tensorNet.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/tensorNet.cpp.o -c /home/nvidia/MobileNet-SSD-TensorRT/tensorNet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/inferLib.dir/tensorNet.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/tensorNet.cpp.o -c /home/nvidia/Pelee-TensorRT/tensorNet.cpp
 
 CMakeFiles/inferLib.dir/tensorNet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/tensorNet.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/MobileNet-SSD-TensorRT/tensorNet.cpp > CMakeFiles/inferLib.dir/tensorNet.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/tensorNet.cpp > CMakeFiles/inferLib.dir/tensorNet.cpp.i
 
 CMakeFiles/inferLib.dir/tensorNet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/tensorNet.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/MobileNet-SSD-TensorRT/tensorNet.cpp -o CMakeFiles/inferLib.dir/tensorNet.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/tensorNet.cpp -o CMakeFiles/inferLib.dir/tensorNet.cpp.s
 
 CMakeFiles/inferLib.dir/tensorNet.cpp.o.requires:
 
@@ -1597,16 +1597,16 @@ CMakeFiles/inferLib.dir/tensorNet.cpp.o.provides.build: CMakeFiles/inferLib.dir/
 
 CMakeFiles/inferLib.dir/mathFunctions.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/mathFunctions.cpp.o: mathFunctions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/inferLib.dir/mathFunctions.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/mathFunctions.cpp.o -c /home/nvidia/MobileNet-SSD-TensorRT/mathFunctions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/inferLib.dir/mathFunctions.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/mathFunctions.cpp.o -c /home/nvidia/Pelee-TensorRT/mathFunctions.cpp
 
 CMakeFiles/inferLib.dir/mathFunctions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/mathFunctions.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/MobileNet-SSD-TensorRT/mathFunctions.cpp > CMakeFiles/inferLib.dir/mathFunctions.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/mathFunctions.cpp > CMakeFiles/inferLib.dir/mathFunctions.cpp.i
 
 CMakeFiles/inferLib.dir/mathFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/mathFunctions.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/MobileNet-SSD-TensorRT/mathFunctions.cpp -o CMakeFiles/inferLib.dir/mathFunctions.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/mathFunctions.cpp -o CMakeFiles/inferLib.dir/mathFunctions.cpp.s
 
 CMakeFiles/inferLib.dir/mathFunctions.cpp.o.requires:
 
@@ -1621,16 +1621,16 @@ CMakeFiles/inferLib.dir/mathFunctions.cpp.o.provides.build: CMakeFiles/inferLib.
 
 CMakeFiles/inferLib.dir/main.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/inferLib.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/main.cpp.o -c /home/nvidia/MobileNet-SSD-TensorRT/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/inferLib.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/main.cpp.o -c /home/nvidia/Pelee-TensorRT/main.cpp
 
 CMakeFiles/inferLib.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/MobileNet-SSD-TensorRT/main.cpp > CMakeFiles/inferLib.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/main.cpp > CMakeFiles/inferLib.dir/main.cpp.i
 
 CMakeFiles/inferLib.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/MobileNet-SSD-TensorRT/main.cpp -o CMakeFiles/inferLib.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/main.cpp -o CMakeFiles/inferLib.dir/main.cpp.s
 
 CMakeFiles/inferLib.dir/main.cpp.o.requires:
 
@@ -1645,16 +1645,16 @@ CMakeFiles/inferLib.dir/main.cpp.o.provides.build: CMakeFiles/inferLib.dir/main.
 
 CMakeFiles/inferLib.dir/common.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/common.cpp.o: common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/inferLib.dir/common.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/common.cpp.o -c /home/nvidia/MobileNet-SSD-TensorRT/common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/inferLib.dir/common.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/common.cpp.o -c /home/nvidia/Pelee-TensorRT/common.cpp
 
 CMakeFiles/inferLib.dir/common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/common.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/MobileNet-SSD-TensorRT/common.cpp > CMakeFiles/inferLib.dir/common.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/common.cpp > CMakeFiles/inferLib.dir/common.cpp.i
 
 CMakeFiles/inferLib.dir/common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/common.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/MobileNet-SSD-TensorRT/common.cpp -o CMakeFiles/inferLib.dir/common.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/common.cpp -o CMakeFiles/inferLib.dir/common.cpp.s
 
 CMakeFiles/inferLib.dir/common.cpp.o.requires:
 
@@ -1669,16 +1669,16 @@ CMakeFiles/inferLib.dir/common.cpp.o.provides.build: CMakeFiles/inferLib.dir/com
 
 CMakeFiles/inferLib.dir/util/loadImage.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/util/loadImage.cpp.o: util/loadImage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/inferLib.dir/util/loadImage.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/util/loadImage.cpp.o -c /home/nvidia/MobileNet-SSD-TensorRT/util/loadImage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/inferLib.dir/util/loadImage.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/util/loadImage.cpp.o -c /home/nvidia/Pelee-TensorRT/util/loadImage.cpp
 
 CMakeFiles/inferLib.dir/util/loadImage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/util/loadImage.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/MobileNet-SSD-TensorRT/util/loadImage.cpp > CMakeFiles/inferLib.dir/util/loadImage.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/util/loadImage.cpp > CMakeFiles/inferLib.dir/util/loadImage.cpp.i
 
 CMakeFiles/inferLib.dir/util/loadImage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/util/loadImage.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/MobileNet-SSD-TensorRT/util/loadImage.cpp -o CMakeFiles/inferLib.dir/util/loadImage.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/util/loadImage.cpp -o CMakeFiles/inferLib.dir/util/loadImage.cpp.s
 
 CMakeFiles/inferLib.dir/util/loadImage.cpp.o.requires:
 
@@ -1702,15 +1702,15 @@ inferLib_OBJECTS = \
 
 # External object files for target inferLib
 inferLib_EXTERNAL_OBJECTS = \
-"/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o" \
-"/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o" \
-"/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o" \
-"/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o" \
-"/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o" \
-"/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o" \
-"/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o" \
-"/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o" \
-"/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o"
+"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o" \
+"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o" \
+"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o" \
+"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o" \
+"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o" \
+"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o" \
+"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o" \
+"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o" \
+"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o"
 
 build/lib/libinferLib.so: CMakeFiles/inferLib.dir/pluginImplement.cpp.o
 build/lib/libinferLib.so: CMakeFiles/inferLib.dir/tensorNet.cpp.o
@@ -1735,7 +1735,7 @@ build/lib/libinferLib.so: /usr/lib/aarch64-linux-gnu/libnvinfer.so
 build/lib/libinferLib.so: /usr/lib/aarch64-linux-gnu/libnvinfer_plugin.so
 build/lib/libinferLib.so: /usr/lib/aarch64-linux-gnu/libnvparsers.so
 build/lib/libinferLib.so: CMakeFiles/inferLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library build/lib/libinferLib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library build/lib/libinferLib.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/inferLib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1765,6 +1765,6 @@ CMakeFiles/inferLib.dir/depend: CMakeFiles/inferLib.dir/util/cuda/inferLib_gener
 CMakeFiles/inferLib.dir/depend: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o
 CMakeFiles/inferLib.dir/depend: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o
 CMakeFiles/inferLib.dir/depend: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o
-	cd /home/nvidia/MobileNet-SSD-TensorRT && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/MobileNet-SSD-TensorRT /home/nvidia/MobileNet-SSD-TensorRT /home/nvidia/MobileNet-SSD-TensorRT /home/nvidia/MobileNet-SSD-TensorRT /home/nvidia/MobileNet-SSD-TensorRT/CMakeFiles/inferLib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nvidia/Pelee-TensorRT && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/Pelee-TensorRT /home/nvidia/Pelee-TensorRT /home/nvidia/Pelee-TensorRT /home/nvidia/Pelee-TensorRT /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/inferLib.dir/depend
 
