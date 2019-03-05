@@ -1,7 +1,7 @@
-# MobileNet-SSD-TensorRT
-**To accelerate mobileNet-ssd with tensorRT**
+# Pelee-TensorRT
+**To accelerate Pelee with tensorRT**
 
-**TensorRT-Mobilenet-SSD can run 50fps on jetson tx2**
+**TensorRT-Pelee can run 80fps on jetson tx2(FP32)**
 
 ---
 
@@ -11,7 +11,7 @@
 
 2.cudnn7
 
-3.opencv
+3.Opencv
 
 ---
 
@@ -20,7 +20,7 @@
 ```shell
 cmake .
 make
-./build/bin/mobileNet
+./build/bin/pelee
 ```
 
 ---
@@ -28,21 +28,16 @@ make
 **Reference:**
 
 https://github.com/saikumarGadde/tensorrt-ssd-easy
+https://github.com/chuanqi305/MobileNet-SSD 
+https://github.com/Ghustwb/MobileNet-SSD-TensorRT
 
-https://github.com/chuanqi305/MobileNet-SSD
 
-I replaced depthwise with group_conv,because group_conv  has been optimized in cudnn7
-
-I retrianed mobileNet-SSD,my number of classfication is 5
 
 ---
 
 **TODO:**
-
-- [x] To save serialized model 
-- [x] To solve the bug of getting different result with same input
-- [ ] The bottleneck of time cost lies in the decoding of pictures. "imread" cost too much ,to resolve it.
-- [x] To modify the architecture, decrease the time cost
+- [ ] FP16 Implementation 
+- [ ] Change Custom layers IPlugin to IPluginExt
 
 
 
