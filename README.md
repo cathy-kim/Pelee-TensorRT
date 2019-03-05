@@ -1,6 +1,8 @@
 # Pelee-TensorRT
 
 **Accelerate Pelee with tensorRT**
+Pelee: A Real-Time Object Detection System on Mobile Devices (NeurIPS 2018) 
+
 **TensorRT-Pelee can run 80fps on jetson tx2(FP32)**
 
 ---
