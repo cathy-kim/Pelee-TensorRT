@@ -1,17 +1,19 @@
 # Pelee-TensorRT
-**To accelerate Pelee with tensorRT**
 
+**Accelerate Pelee with tensorRT**
 **TensorRT-Pelee can run 80fps on jetson tx2(FP32)**
 
 ---
 
 **Requierments:**
 
-1.tensorRT4
+1.TensorRT4
 
-2.cudnn7
+2.CUDA 9.0
 
-3.Opencv
+3.cudnn7
+
+4.Jetpack 3.3(on TX2) 
 
 ---
 
@@ -31,8 +33,6 @@ https://github.com/saikumarGadde/tensorrt-ssd-easy
 https://github.com/chuanqi305/MobileNet-SSD 
 https://github.com/Ghustwb/MobileNet-SSD-TensorRT
 
-
-
 ---
 
 **TODO:**
@@ -41,12 +41,7 @@ https://github.com/Ghustwb/MobileNet-SSD-TensorRT
 
 
 
-*If want to decrease the time cost of "imread",you could rebuild OpenCV[https://github.com/jetsonhacks/buildOpenCVTX2]*
-
-*Added producer-consumer*
-
-
 
 **The bug has been fixed**
 
-![image](testPic/test1.png)
+![image](testPic/test.png)
