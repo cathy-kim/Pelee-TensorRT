@@ -35,8 +35,6 @@ make
 
 **Reference:**
 
-https://github.com/saikumarGadde/tensorrt-ssd-easy
-https://github.com/chuanqi305/MobileNet-SSD 
 https://github.com/Ghustwb/MobileNet-SSD-TensorRT
 
 ---
