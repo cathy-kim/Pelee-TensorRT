@@ -10,10 +10,10 @@
 #include <cublas_v2.h>
 
 #include "NvCaffeParser.h"
-//#include "NvInfer.h"
+#include "NvInfer.h"
 #include "NvInferPlugin.h"
-//#include "NvUtils.h"
-void cudaSoftmax(int n,int channels, float* x, float* y);
+#include "NvUtils.h"
+//#include "fp16.h"
 
 #define CHECK(status)                                                                                           \
     {                                                                                                                           \
@@ -31,6 +31,11 @@ using namespace nvinfer1;
 using namespace nvcaffeparser1;
 using namespace plugin;
 
+static const int TIMING_ITERATIONS = 1000; 
+
+
+
+
 enum FunctionType
 {
     SELECT=0,
@@ -38,6 +43,9 @@ enum FunctionType
 };
 
 void cudaSoftmax(int n, int channels,  float* x, float*y);
+//void cudaSoftmax(int n, int channels, __half* x, __half* y);
+
+
 
 class bboxProfile {
 public:
@@ -97,8 +105,17 @@ public:
 
     // currently it is not possible for a plugin to execute "in place". Therefore we memcpy the data from the input to the output buffer
     int enqueue(int batchSize, const void*const *inputs, void** outputs, void* workspace, cudaStream_t stream) override
-    {
-        CHECK(cudaMemcpyAsync(outputs[0], inputs[0] , mCopySize * batchSize, cudaMemcpyDeviceToDevice, stream));
+    {  	
+   	if(mDataType == DataType::kFLOAT){ // FP32 
+	CHECK(cudaMemcpyAsync(outputs[0], inputs[0] , mCopySize * batchSize, cudaMemcpyDeviceToDevice, stream)); 
+	} 
+	else{  //FP16 
+	CHECK(cudaMemcpyAsync(
+		reinterpret_cast<__half*>(outputs[0]), 
+		reinterpret_cast<const __half*>(inputs[0]), mCopySize * batchSize, 
+		cudaMemcpyDeviceToDevice, stream)); 
+	}
+        //CHECK(cudaMemcpyAsync(outputs[0], inputs[0] , mCopySize * batchSize, cudaMemcpyDeviceToDevice, stream));
         return 0;
     }
     size_t getSerializationSize() override
@@ -113,8 +130,10 @@ public:
     {
         mCopySize = inputs[0].d[0] * inputs[0].d[1] * inputs[0].d[2] * sizeof(float);
     }
+
 protected:
     size_t mCopySize;
+    DataType mDataType{DataType::kFLOAT};
 
 };
 
@@ -156,10 +175,25 @@ public:
 
     int enqueue(int batchSize, const void*const *inputs, void** outputs, void* workspace, cudaStream_t stream) override
     {
-      //  std::cout<<"flatten enqueue:"<<batchSize<<";"<< mCopySize<<std::endl;
+        //std::cout<<"flatten enqueue:"<<batchSize<<";"<< mCopySize<<std::endl;
 //        CHECK(cudaMemcpyAsync(outputs[0],inputs[0],batchSize*mCopySize*sizeof(float),cudaMemcpyDeviceToDevice,stream));
+        //@Seojin add fp16 inference code 
+	//if(mDataType == DataType::kFLOAT){ //FP32 
+	  cudaSoftmax( 8732*21, 21, (float *) *inputs, static_cast<float *>(*outputs));
 
-        cudaSoftmax( 8732*21, 21, (float *) *inputs, static_cast<float *>(*outputs));
+	//}
+	/*
+	else{
+	  cudaSoftmax( 8732*21, 21, (__half *) *inputs, static_cast<__half *>(*outputs));
+	} 
+	*/
+	/*
+	else{  //FP16 
+	    cudaSoftmax( 8732*21, 21, 
+		(__half *) *inputs, 
+		static_cast<__half*>(*outputs));
+	} */ 
+        //cudaSoftmax( 8732*21, 21, (float *) *inputs, static_cast<float *>(*outputs));
 
         return 0;
     }
@@ -179,6 +213,7 @@ public:
 
 protected:
     size_t mCopySize;
+    DataType mDataType{DataType::kFLOAT}; 
 
 };
 
@@ -217,8 +252,19 @@ public:
 
     int enqueue(int batchSize, const void*const *inputs, void** outputs, void*, cudaStream_t stream) override
     {
-      //  std::cout<<"flatten enqueue:"<<batchSize<<";"<<_size<<std::endl;
-        CHECK(cudaMemcpyAsync(outputs[0],inputs[0],batchSize*_size*sizeof(float),cudaMemcpyDeviceToDevice,stream));
+        //std::cout<<"flatten enqueue:"<<batchSize<<";"<<_size<<std::endl;
+        if(mDataType == DataType::kFLOAT){ //FP32 
+	  CHECK(cudaMemcpyAsync(outputs[0],inputs[0],batchSize*_size*sizeof(float),cudaMemcpyDeviceToDevice,stream));
+	} 
+	else{ //FP16
+	  CHECK(cudaMemcpyAsync(
+		reinterpret_cast<__half*>(outputs[0]),
+		reinterpret_cast<const __half*>(inputs[0]),
+		batchSize*_size*sizeof(__half),
+		cudaMemcpyDeviceToDevice,stream));
+	}
+
+	//CHECK(cudaMemcpyAsync(outputs[0],inputs[0],batchSize*_size*sizeof(float),cudaMemcpyDeviceToDevice,stream));
         return 0;
     }
 
@@ -237,11 +283,13 @@ public:
     {
         dimBottom = DimsCHW(inputs[0].d[0], inputs[0].d[1], inputs[0].d[2]);
     }
-protected:
+protected: 
+    DataType mDataType{DataType::kFLOAT}; 
     DimsCHW dimBottom;
     int _size;
 };
 
+/*
 //Concat layer . TensorRT Concat only support cross channel
 class ConcatPlugin : public IPlugin
 {
@@ -271,19 +319,8 @@ protected:
     DimsCHW dimsConv4_3;
     DimsCHW dimsFc7;
     DimsCHW dimsConv6;
-    DimsCHW dimsConv7;
-    DimsCHW dimsConv8;
-    DimsCHW dimsConv9;
-
-    int inputs_size;
-    int top_concat_axis;//top 层 concat后的维度
-    int* bottom_concat_axis = new int[9];//记录每个bottom层concat维度的shape
-    int* concat_input_size_ = new int[9];
-    int* num_concats_ = new int[9];
-    int _axis;
-
-};
-
+ 
+*/
 
 
 

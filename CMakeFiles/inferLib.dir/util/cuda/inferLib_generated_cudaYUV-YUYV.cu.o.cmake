@@ -56,18 +56,18 @@ endif()
 
 # Set these up as variables to make reading the generated file easier
 set(CMAKE_COMMAND "/usr/bin/cmake") # path
-set(source_file "/home/nvidia/Pelee-TensorRT/util/cuda/cudaYUV-YUYV.cu") # path
-set(NVCC_generated_dependency_file "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o.NVCC-depend") # path
-set(cmake_dependency_file "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o.depend") # path
+set(source_file "/home/nvidia/TRT-Pelee/util/cuda/cudaYUV-YUYV.cu") # path
+set(NVCC_generated_dependency_file "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o.NVCC-depend") # path
+set(cmake_dependency_file "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o.depend") # path
 set(CUDA_make2cmake "/usr/share/cmake-3.5/Modules/FindCUDA/make2cmake.cmake") # path
 set(CUDA_parse_cubin "/usr/share/cmake-3.5/Modules/FindCUDA/parse_cubin.cmake") # path
 set(build_cubin OFF) # bool
 set(CUDA_HOST_COMPILER "/usr/bin/cc") # path
 # We won't actually use these variables for now, but we need to set this, in
 # order to force this file to be run again if it changes.
-set(generated_file_path "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.") # path
-set(generated_file_internal "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o") # path
-set(generated_cubin_file_internal "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o.cubin.txt") # path
+set(generated_file_path "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/.") # path
+set(generated_file_internal "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o") # path
+set(generated_cubin_file_internal "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/local/cuda-9.0/bin/nvcc") # path
 set(CUDA_NVCC_FLAGS --disable-warnings;-O3;-gencode;arch=compute_30,code=sm_30;-gencode;arch=compute_35,code=sm_35;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_50,code=compute_50;-gencode;arch=compute_52,code=sm_52;-gencode;arch=compute_61,code=sm_61;-gencode;arch=compute_62,code=sm_62 ;; ) # list
@@ -77,7 +77,7 @@ set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )
 set(CUDA_NVCC_FLAGS_RELEASE  ; )
 set(CUDA_NVCC_FLAGS_RELWITHDEBINFO  ; )
 set(nvcc_flags -m64;--std;c++11;-DinferLib_EXPORTS) # list
-set(CUDA_NVCC_INCLUDE_ARGS "-I/usr/local/cuda-9.0/include;-I/home/nvidia/Pelee-TensorRT/build/include/util;-I/home/nvidia/Pelee-TensorRT/util;-I/usr/include;-I/usr/include/opencv;-I/usr/local/cuda-9.0/include") # list (needs to be in quotes to handle spaces properly).
+set(CUDA_NVCC_INCLUDE_ARGS "-I/usr/local/cuda-9.0/include;-I/home/nvidia/TRT-Pelee/build/include/util;-I/home/nvidia/TRT-Pelee/util;-I/usr/include;-I/usr/include/opencv;-I/usr/local/cuda-9.0/include") # list (needs to be in quotes to handle spaces properly).
 set(format_flag "-c") # string
 set(cuda_language_flag ) # list
 

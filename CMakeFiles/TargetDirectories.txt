@@ -1,8 +1,8 @@
-/home/nvidia/Pelee-TensorRT/CMakeFiles/install.dir
-/home/nvidia/Pelee-TensorRT/CMakeFiles/list_install_components.dir
-/home/nvidia/Pelee-TensorRT/CMakeFiles/rebuild_cache.dir
-/home/nvidia/Pelee-TensorRT/CMakeFiles/edit_cache.dir
-/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir
-/home/nvidia/Pelee-TensorRT/CMakeFiles/pelee.dir
-/home/nvidia/Pelee-TensorRT/CMakeFiles/install/local.dir
-/home/nvidia/Pelee-TensorRT/CMakeFiles/install/strip.dir
+/home/nvidia/TRT-Pelee/CMakeFiles/install.dir
+/home/nvidia/TRT-Pelee/CMakeFiles/list_install_components.dir
+/home/nvidia/TRT-Pelee/CMakeFiles/rebuild_cache.dir
+/home/nvidia/TRT-Pelee/CMakeFiles/edit_cache.dir
+/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir
+/home/nvidia/TRT-Pelee/CMakeFiles/pelee.dir
+/home/nvidia/TRT-Pelee/CMakeFiles/install/local.dir
+/home/nvidia/TRT-Pelee/CMakeFiles/install/strip.dir

@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/nvidia/Pelee-TensorRT/common.cpp
+/home/nvidia/TRT-Pelee/common.cpp
 common.h
-/home/nvidia/Pelee-TensorRT/common.h
+/home/nvidia/TRT-Pelee/common.h
 
-/home/nvidia/Pelee-TensorRT/common.h
+/home/nvidia/TRT-Pelee/common.h
 NvInfer.h
-/home/nvidia/Pelee-TensorRT/NvInfer.h
+/home/nvidia/TRT-Pelee/NvInfer.h
 string
 -
 vector
@@ -36,7 +36,7 @@ opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
 -
 
-/home/nvidia/Pelee-TensorRT/cudaUtility.h
+/home/nvidia/TRT-Pelee/cudaUtility.h
 cuda_runtime.h
 -
 cuda.h
@@ -46,7 +46,7 @@ stdio.h
 string.h
 -
 
-/home/nvidia/Pelee-TensorRT/imageBuffer.h
+/home/nvidia/TRT-Pelee/imageBuffer.h
 opencv2/opencv.hpp
 -
 mutex
@@ -56,31 +56,31 @@ condition_variable
 queue
 -
 
-/home/nvidia/Pelee-TensorRT/main.cpp
+/home/nvidia/TRT-Pelee/main.cpp
 common.h
-/home/nvidia/Pelee-TensorRT/common.h
+/home/nvidia/TRT-Pelee/common.h
 cudaUtility.h
-/home/nvidia/Pelee-TensorRT/cudaUtility.h
+/home/nvidia/TRT-Pelee/cudaUtility.h
 mathFunctions.h
-/home/nvidia/Pelee-TensorRT/mathFunctions.h
+/home/nvidia/TRT-Pelee/mathFunctions.h
 pluginImplement.h
-/home/nvidia/Pelee-TensorRT/pluginImplement.h
+/home/nvidia/TRT-Pelee/pluginImplement.h
 tensorNet.h
-/home/nvidia/Pelee-TensorRT/tensorNet.h
+/home/nvidia/TRT-Pelee/tensorNet.h
 loadImage.h
-/home/nvidia/Pelee-TensorRT/loadImage.h
+/home/nvidia/TRT-Pelee/loadImage.h
 imageBuffer.h
-/home/nvidia/Pelee-TensorRT/imageBuffer.h
+/home/nvidia/TRT-Pelee/imageBuffer.h
 chrono
 -
 thread
 -
 
-/home/nvidia/Pelee-TensorRT/mathFunctions.cpp
+/home/nvidia/TRT-Pelee/mathFunctions.cpp
 mathFunctions.h
-/home/nvidia/Pelee-TensorRT/mathFunctions.h
+/home/nvidia/TRT-Pelee/mathFunctions.h
 
-/home/nvidia/Pelee-TensorRT/mathFunctions.h
+/home/nvidia/TRT-Pelee/mathFunctions.h
 stdint.h
 -
 cmath
@@ -104,17 +104,17 @@ algorithm
 glog/logging.h
 -
 
-/home/nvidia/Pelee-TensorRT/pluginImplement.cpp
+/home/nvidia/TRT-Pelee/pluginImplement.cpp
 pluginImplement.h
-/home/nvidia/Pelee-TensorRT/pluginImplement.h
+/home/nvidia/TRT-Pelee/pluginImplement.h
 mathFunctions.h
-/home/nvidia/Pelee-TensorRT/mathFunctions.h
+/home/nvidia/TRT-Pelee/mathFunctions.h
 vector
 -
 algorithm
 -
 
-/home/nvidia/Pelee-TensorRT/pluginImplement.h
+/home/nvidia/TRT-Pelee/pluginImplement.h
 memory
 -
 cassert
@@ -130,29 +130,35 @@ cuda_runtime.h
 cublas_v2.h
 -
 NvCaffeParser.h
-/home/nvidia/Pelee-TensorRT/NvCaffeParser.h
+/home/nvidia/TRT-Pelee/NvCaffeParser.h
+NvInfer.h
+/home/nvidia/TRT-Pelee/NvInfer.h
 NvInferPlugin.h
-/home/nvidia/Pelee-TensorRT/NvInferPlugin.h
+/home/nvidia/TRT-Pelee/NvInferPlugin.h
+NvUtils.h
+/home/nvidia/TRT-Pelee/NvUtils.h
 
-/home/nvidia/Pelee-TensorRT/tensorNet.cpp
+/home/nvidia/TRT-Pelee/tensorNet.cpp
 algorithm
 -
+common.h
+/home/nvidia/TRT-Pelee/common.h
 tensorNet.h
-/home/nvidia/Pelee-TensorRT/tensorNet.h
+/home/nvidia/TRT-Pelee/tensorNet.h
 sstream
 -
 fstream
 -
 
-/home/nvidia/Pelee-TensorRT/tensorNet.h
+/home/nvidia/TRT-Pelee/tensorNet.h
 pluginImplement.h
-/home/nvidia/Pelee-TensorRT/pluginImplement.h
+/home/nvidia/TRT-Pelee/pluginImplement.h
 
-/home/nvidia/Pelee-TensorRT/util/cuda/cudaMappedMemory.h
+/home/nvidia/TRT-Pelee/util/cuda/cudaMappedMemory.h
 cudaUtility.h
-/home/nvidia/Pelee-TensorRT/util/cuda/cudaUtility.h
+/home/nvidia/TRT-Pelee/util/cuda/cudaUtility.h
 
-/home/nvidia/Pelee-TensorRT/util/cuda/cudaUtility.h
+/home/nvidia/TRT-Pelee/util/cuda/cudaUtility.h
 cuda_runtime.h
 -
 cuda.h
@@ -162,21 +168,21 @@ stdio.h
 string.h
 -
 
-/home/nvidia/Pelee-TensorRT/util/loadImage.cpp
+/home/nvidia/TRT-Pelee/util/loadImage.cpp
 iostream
 -
 loadImage.h
-/home/nvidia/Pelee-TensorRT/util/loadImage.h
+/home/nvidia/TRT-Pelee/util/loadImage.h
 ../util/cuda/cudaMappedMemory.h
-/home/nvidia/Pelee-TensorRT/util/cuda/cudaMappedMemory.h
+/home/nvidia/TRT-Pelee/util/cuda/cudaMappedMemory.h
 opencv2/core/mat.hpp
 -
 
-/home/nvidia/Pelee-TensorRT/util/loadImage.h
+/home/nvidia/TRT-Pelee/util/loadImage.h
 opencv2/core/mat.hpp
 -
 ../util/cuda/cudaUtility.h
-/home/nvidia/Pelee-TensorRT/util/cuda/cudaUtility.h
+/home/nvidia/TRT-Pelee/util/cuda/cudaUtility.h
 
 /usr/local/cuda-9.0/include/builtin_types.h
 device_types.h

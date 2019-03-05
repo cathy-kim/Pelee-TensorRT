@@ -9,8 +9,8 @@
 #include <thread>
 
 
-const char* model  = "/home/nvidia/Pelee-TensorRT/model/pelee/pelee_deploy_iplugin.prototxt";
-const char* weight = "/home/nvidia/Pelee-TensorRT/model/pelee/pelee_merged.caffemodel";
+const char* model  = "model/pelee/pelee_deploy_iplugin.prototxt";
+const char* weight = "model/pelee/pelee_merged.caffemodel";
 
 const char* INPUT_BLOB_NAME = "data";
 
@@ -32,7 +32,7 @@ public:
         end_ = std::chrono::high_resolution_clock::now();
         start_ticking_ = false;
         t = std::chrono::duration<double, std::milli>(end_ - start_).count();
-        std::cout << "Time: " << t << " ms" << std::endl;
+        //std::cout << "Time: " << t << " ms" << std::endl;
     }
     double t;
 private:
@@ -90,7 +90,7 @@ void loadImg( cv::Mat &input, int re_width, int re_height, float *data_unifrom,c
 //thread read video
 void readPicture()
 {
-    cv::VideoCapture cap("/home/nvidia/MobileNet-SSD-TensorRT/testVideo/test.avi");
+    cv::VideoCapture cap("testVideo/test.avi");
     cv::Mat image;
     while(cap.isOpened())
     {
@@ -112,8 +112,8 @@ int main(int argc, char *argv[])
     std::cout << "allocate data" << std::endl;
     float* output  = allocateMemory( dimsOut  , (char*)"output blob");
     std::cout << "allocate output" << std::endl;
-    int height = 300;
-    int width  = 300;
+    int height = 304;
+    int width  = 304;
 
     cv::Mat frame,srcImg;
 
@@ -121,8 +121,8 @@ int main(int argc, char *argv[])
     void* imgCUDA;
     Timer timer;
 
-    std::string imgFile = "../../testPic/test.jpg";
-    frame = cv::imread(imgFile);
+    //std::string imgFile = "/home/nvidia/MobileNet-SSD-TensorRT/testPic/000005.jpg";
+    //frame = cv::imread(imgFile,cv::IMREAD_COLOR);
 
     std::thread readTread(readPicture);
     readTread.detach();
@@ -130,7 +130,7 @@ int main(int argc, char *argv[])
     imageBuffer->consume(frame);
 
     srcImg = frame.clone();
-    cv::resize(frame, frame, cv::Size(300,300));
+    cv::resize(frame, frame, cv::Size(304,304));
     const size_t size = width * height * sizeof(float3);
 
     if( CUDA_FAILED( cudaMalloc( &imgCUDA, size)) )
@@ -142,10 +142,12 @@ int main(int argc, char *argv[])
     void* imgData = malloc(size);
     memset(imgData,0,size);
 
-    loadImg(frame,height,width,(float*)imgData,make_float3(127.5,127.5,127.5),0.007843);
+    loadImg(frame,height,width,(float*)imgData,make_float3(103.94,116.78,123.68),0.017);
     cudaMemcpyAsync(imgCUDA,imgData,size,cudaMemcpyHostToDevice);
 
-    void* buffers[] = { imgCUDA, output };
+    void* buffers[] = { imgCUDA, output }; 
+
+    
 
     timer.tic();
     tensorNet.imageInference( buffers, output_vector.size() + 1, BATCH_SIZE);
@@ -164,7 +166,7 @@ int main(int argc, char *argv[])
         float ymin = output[7*k + 4];
         float xmax = output[7*k + 5];
         float ymax = output[7*k + 6];
-        std::cout << classIndex << " , " << confidence << " , "  << xmin << " , " << ymin<< " , " << xmax<< " , " << ymax << std::endl;
+        //std::cout << classIndex << " , " << confidence << " , "  << xmin << " , " << ymin<< " , " << xmax<< " , " << ymax << std::endl;
         int x1 = static_cast<int>(xmin * srcImg.cols);
         int y1 = static_cast<int>(ymin * srcImg.rows);
         int x2 = static_cast<int>(xmax * srcImg.cols);
@@ -172,7 +174,7 @@ int main(int argc, char *argv[])
         cv::rectangle(srcImg,cv::Rect2f(cv::Point(x1,y1),cv::Point(x2,y2)),cv::Scalar(255,0,255),1);
 
     }
-    cv::imshow("mobileNet",srcImg);
+    cv::imshow("Pelee",srcImg);
     cv::waitKey(40);
     free(imgData);
     }

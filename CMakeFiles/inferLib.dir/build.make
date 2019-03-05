@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nvidia/Pelee-TensorRT
+CMAKE_SOURCE_DIR = /home/nvidia/TRT-Pelee
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nvidia/Pelee-TensorRT
+CMAKE_BINARY_DIR = /home/nvidia/TRT-Pelee
 
 # Include any dependencies generated for this target.
 include CMakeFiles/inferLib.dir/depend.make
@@ -57,1508 +57,81 @@ include CMakeFiles/inferLib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/inferLib.dir/flags.make
 
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: cudaUtility.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: mathFunctions.cu
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: mathFunctions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/_G_config.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/asm/errno.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap-16.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/confname.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/endian.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/environments.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/errno.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_val.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_valf.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_vall.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/inf.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/local_lim.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/locale.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/math-vector.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/mathdef.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/mathinline.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/nan.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/posix1_lim.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/posix2_lim.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/posix_opt.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/sched.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/select.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/select2.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/setjmp.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/sigset.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio2.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/string3.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/sys_errlist.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/time.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/timex.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/types.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/typesizes.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/unistd.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/waitflags.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/waitstatus.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar2.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/wordsize.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/atomic_word.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++allocator.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++config.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++locale.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/cpu_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/ctype_base.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/ctype_inline.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/error_constants.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/gthr-default.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/gthr.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/opt_random.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/os_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/sys/cdefs.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/sys/select.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/sys/sysmacros.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/aarch64-linux-gnu/sys/types.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/alloca.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/asm-generic/errno-base.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/asm-generic/errno.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/assert.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/algorithm
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/backward/binders.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/algorithmfwd.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/alloc_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/allocator.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/basic_ios.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/basic_ios.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/basic_string.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/basic_string.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/char_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/concept_check.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/cxxabi_forced.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/exception_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/exception_ptr.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/functexcept.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/functional_hash.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/hash_bytes.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/ios_base.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/istream.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/locale_classes.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/locale_classes.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/locale_facets.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/locale_facets.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/localefwd.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/memoryfwd.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/move.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/nested_exception.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/ostream.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/ostream_insert.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/postypes.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/predefined_ops.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/ptr_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/random.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/random.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/range_access.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/sstream.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_algo.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_algobase.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_bvector.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_construct.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_function.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_heap.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_iterator.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_iterator_base_funcs.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_iterator_base_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_numeric.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_pair.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_relops.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_tempbuf.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_uninitialized.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stl_vector.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/streambuf.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/streambuf_iterator.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/stringfwd.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/uniform_int_dist.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/bits/vector.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/cctype
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/cerrno
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/clocale
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/cmath
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/cstdint
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/cstdio
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/cstdlib
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/cwchar
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/cwctype
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/debug/debug.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/exception
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/ext/alloc_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/ext/atomicity.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/ext/new_allocator.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/ext/numeric_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/ext/string_conversions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/ext/type_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/initializer_list
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/ios
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/iosfwd
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/iostream
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/istream
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/limits
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/new
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/numeric
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/ostream
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/random
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/sstream
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/stdexcept
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/streambuf
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/string
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/system_error
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/type_traits
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/utility
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/c++/5/vector
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/cblas.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/cblas_mangling.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/ctype.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/cudnn.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/endian.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/errno.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/features.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/getopt.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/gflags/gflags.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/gflags/gflags_declare.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/gflags/gflags_gflags.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/glog/log_severity.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/glog/logging.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/glog/vlog_is_on.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/inttypes.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/libio.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/limits.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/linux/errno.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/linux/limits.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/locale.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/math.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/pthread.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/sched.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/stdc-predef.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/stdint.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/stdio.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/stdlib.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/string.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/time.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/unistd.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/wchar.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/wctype.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/include/xlocale.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/limits.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/syslimits.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdarg.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stddef.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdint.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/common_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/cuComplex.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/cublas_api.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/cublas_v2.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/cuda.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/cuda_fp16.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/cuda_fp16.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/curand.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/device_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/device_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/driver_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/host_config.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/host_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/library_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/surface_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/texture_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: /usr/local/cuda-9.0/include/vector_types.h
+CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o.depend
 CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o.cmake
 CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o: mathFunctions.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o"
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//.
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_mathFunctions.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_mathFunctions.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//inferLib_generated_mathFunctions.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o"
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir && /usr/bin/cmake -E make_directory /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir//.
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir//./inferLib_generated_mathFunctions.cu.o -D generated_cubin_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir//./inferLib_generated_mathFunctions.cu.o.cubin.txt -P /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir//inferLib_generated_mathFunctions.cu.o.cmake
 
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: kernel.cu
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: util/cuda/cudaUtility.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/_G_config.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/asm/errno.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap-16.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/endian.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/errno.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_val.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_valf.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_vall.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/inf.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/local_lim.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/locale.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/math-vector.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/mathdef.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/mathinline.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/nan.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/posix1_lim.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/posix2_lim.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/sched.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/select.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/select2.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/setjmp.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/sigset.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio2.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/string3.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/sys_errlist.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/time.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/timex.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/types.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/typesizes.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/waitflags.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/waitstatus.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar2.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/wordsize.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/atomic_word.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++allocator.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++config.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++locale.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/cpu_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/ctype_base.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/ctype_inline.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/error_constants.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/gthr-default.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/gthr.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/os_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/sys/cdefs.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/sys/select.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/sys/sysmacros.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/aarch64-linux-gnu/sys/types.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/alloca.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/asm-generic/errno-base.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/asm-generic/errno.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/assert.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/backward/binders.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/alloc_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/allocator.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/basic_ios.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/basic_ios.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/basic_string.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/basic_string.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/char_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/concept_check.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/cxxabi_forced.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/exception_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/exception_ptr.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/functexcept.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/functional_hash.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/hash_bytes.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/ios_base.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/istream.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/locale_classes.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/locale_classes.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/locale_facets.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/locale_facets.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/localefwd.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/memoryfwd.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/move.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/nested_exception.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/ostream.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/ostream_insert.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/postypes.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/predefined_ops.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/ptr_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/range_access.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/stl_algobase.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/stl_function.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/stl_iterator.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/stl_iterator_base_funcs.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/stl_iterator_base_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/stl_pair.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/streambuf.tcc
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/streambuf_iterator.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/bits/stringfwd.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/cctype
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/cerrno
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/clocale
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/cmath
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/cstdint
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/cstdio
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/cstdlib
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/cwchar
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/cwctype
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/debug/debug.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/exception
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/ext/alloc_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/ext/atomicity.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/ext/new_allocator.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/ext/numeric_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/ext/string_conversions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/ext/type_traits.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/initializer_list
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/ios
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/iosfwd
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/iostream
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/istream
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/new
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/ostream
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/stdexcept
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/streambuf
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/string
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/system_error
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/c++/5/type_traits
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/ctype.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/endian.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/errno.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/features.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/libio.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/limits.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/linux/errno.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/linux/limits.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/locale.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/math.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/pthread.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/sched.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/stdc-predef.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/stdint.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/stdio.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/stdlib.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/string.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/time.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/wchar.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/wctype.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/include/xlocale.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/limits.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/syslimits.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdarg.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stddef.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdint.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/common_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/cuda.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/device_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/device_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/driver_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/host_config.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/host_defines.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/library_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/surface_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/texture_types.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
-CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: /usr/local/cuda-9.0/include/vector_types.h
+CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o.depend
 CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o.cmake
 CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o: kernel.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building NVCC (Device) object CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o"
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//.
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_kernel.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//./inferLib_generated_kernel.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir//inferLib_generated_kernel.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building NVCC (Device) object CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o"
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir && /usr/bin/cmake -E make_directory /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir//.
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir//./inferLib_generated_kernel.cu.o -D generated_cubin_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir//./inferLib_generated_kernel.cu.o.cubin.txt -P /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir//inferLib_generated_kernel.cu.o.cmake
 
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: util/cuda/cudaNormalize.cu
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: util/cuda/cudaNormalize.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: util/cuda/cudaUtility.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/_G_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap-16.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_val.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_valf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_vall.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/inf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/local_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/math-vector.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/mathdef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/mathinline.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/nan.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/posix1_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/posix2_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/select2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/sigset.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/string3.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/sys_errlist.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/timex.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/typesizes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/waitflags.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/waitstatus.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/wordsize.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/cpu_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/os_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/sys/cdefs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/sys/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/sys/sysmacros.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/aarch64-linux-gnu/sys/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/alloca.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/assert.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/c++/5/bits/exception_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/c++/5/bits/exception_ptr.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/c++/5/bits/nested_exception.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/c++/5/cmath
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/c++/5/cstdlib
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/c++/5/exception
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/c++/5/ext/type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/c++/5/new
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/features.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/libio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/linux/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/math.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/stdc-predef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/string.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/include/xlocale.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/syslimits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdarg.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stddef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/cuda.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/device_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/driver_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/library_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: /usr/local/cuda-9.0/include/vector_types.h
+CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o.depend
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o: util/cuda/cudaNormalize.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o"
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaNormalize.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaNormalize.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o"
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaNormalize.cu.o -D generated_cubin_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaNormalize.cu.o.cubin.txt -P /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o.cmake
 
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: util/cuda/cudaUtility.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: util/cuda/cudaYUV-YUYV.cu
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: util/cuda/cudaYUV.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/_G_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap-16.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_val.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_valf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_vall.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/inf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/local_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/math-vector.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/mathdef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/mathinline.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/nan.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/posix1_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/posix2_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/select2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/sigset.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/string3.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/sys_errlist.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/timex.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/typesizes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/waitflags.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/waitstatus.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/wordsize.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/cpu_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/os_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/sys/cdefs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/sys/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/sys/sysmacros.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/aarch64-linux-gnu/sys/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/alloca.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/assert.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/c++/5/bits/exception_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/c++/5/bits/exception_ptr.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/c++/5/bits/nested_exception.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/c++/5/cmath
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/c++/5/cstdlib
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/c++/5/exception
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/c++/5/ext/type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/c++/5/new
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/features.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/libio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/linux/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/math.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/stdc-predef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/string.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/include/xlocale.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/syslimits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdarg.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stddef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/cuda.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/device_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/driver_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/library_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: /usr/local/cuda-9.0/include/vector_types.h
+CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o.depend
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o: util/cuda/cudaYUV-YUYV.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o"
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o"
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o -D generated_cubin_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YUYV.cu.o.cubin.txt -P /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o.cmake
 
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: util/cuda/cudaResize.cu
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: util/cuda/cudaResize.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: util/cuda/cudaUtility.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/_G_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap-16.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_val.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_valf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_vall.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/inf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/local_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/math-vector.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/mathdef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/mathinline.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/nan.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/posix1_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/posix2_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/select2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/sigset.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/string3.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/sys_errlist.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/timex.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/typesizes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/waitflags.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/waitstatus.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/wordsize.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/cpu_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/os_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/sys/cdefs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/sys/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/sys/sysmacros.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/aarch64-linux-gnu/sys/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/alloca.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/assert.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/c++/5/bits/exception_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/c++/5/bits/exception_ptr.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/c++/5/bits/nested_exception.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/c++/5/cmath
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/c++/5/cstdlib
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/c++/5/exception
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/c++/5/ext/type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/c++/5/new
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/features.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/libio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/linux/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/math.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/stdc-predef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/string.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/include/xlocale.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/syslimits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdarg.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stddef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/cuda.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/device_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/driver_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/library_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: /usr/local/cuda-9.0/include/vector_types.h
+CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o.depend
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o: util/cuda/cudaResize.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o"
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaResize.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaResize.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o"
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaResize.cu.o -D generated_cubin_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaResize.cu.o.cubin.txt -P /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o.cmake
 
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: util/cuda/cudaUtility.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: util/cuda/cudaYUV-YV12.cu
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: util/cuda/cudaYUV.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/_G_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap-16.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_val.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_valf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_vall.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/inf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/local_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/math-vector.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/mathdef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/mathinline.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/nan.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/posix1_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/posix2_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/select2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/sigset.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/string3.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/sys_errlist.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/timex.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/typesizes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/waitflags.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/waitstatus.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/wordsize.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/cpu_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/os_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/sys/cdefs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/sys/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/sys/sysmacros.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/aarch64-linux-gnu/sys/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/alloca.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/assert.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/c++/5/bits/exception_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/c++/5/bits/exception_ptr.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/c++/5/bits/nested_exception.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/c++/5/cmath
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/c++/5/cstdlib
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/c++/5/exception
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/c++/5/ext/type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/c++/5/new
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/features.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/libio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/linux/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/math.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/stdc-predef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/string.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/include/xlocale.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/syslimits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdarg.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stddef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/cuda.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/device_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/driver_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/library_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: /usr/local/cuda-9.0/include/vector_types.h
+CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o.depend
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o: util/cuda/cudaYUV-YV12.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o"
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YV12.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YV12.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o"
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YV12.cu.o -D generated_cubin_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-YV12.cu.o.cubin.txt -P /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o.cmake
 
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: util/cuda/cudaOverlay.cu
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: util/cuda/cudaOverlay.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: util/cuda/cudaUtility.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/_G_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap-16.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_val.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_valf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_vall.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/inf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/local_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/math-vector.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/mathdef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/mathinline.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/nan.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/posix1_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/posix2_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/select2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/sigset.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/string3.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/sys_errlist.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/timex.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/typesizes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/waitflags.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/waitstatus.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/wordsize.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/cpu_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/os_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/sys/cdefs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/sys/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/sys/sysmacros.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/aarch64-linux-gnu/sys/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/alloca.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/assert.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/c++/5/bits/exception_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/c++/5/bits/exception_ptr.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/c++/5/bits/nested_exception.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/c++/5/cmath
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/c++/5/cstdlib
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/c++/5/exception
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/c++/5/ext/type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/c++/5/new
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/features.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/libio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/linux/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/math.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/stdc-predef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/string.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/include/xlocale.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/syslimits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdarg.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stddef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/cuda.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/device_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/driver_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/library_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: /usr/local/cuda-9.0/include/vector_types.h
+CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o.depend
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o: util/cuda/cudaOverlay.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o"
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaOverlay.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaOverlay.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o"
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaOverlay.cu.o -D generated_cubin_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaOverlay.cu.o.cubin.txt -P /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o.cmake
 
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: util/cuda/cudaRGB.cu
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: util/cuda/cudaRGB.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: util/cuda/cudaUtility.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/_G_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap-16.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_val.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_valf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_vall.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/inf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/local_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/math-vector.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/mathdef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/mathinline.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/nan.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/posix1_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/posix2_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/select2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/sigset.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/string3.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/sys_errlist.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/timex.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/typesizes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/waitflags.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/waitstatus.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/wordsize.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/cpu_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/os_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/sys/cdefs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/sys/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/sys/sysmacros.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/aarch64-linux-gnu/sys/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/alloca.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/assert.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/c++/5/bits/exception_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/c++/5/bits/exception_ptr.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/c++/5/bits/nested_exception.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/c++/5/cmath
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/c++/5/cstdlib
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/c++/5/exception
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/c++/5/ext/type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/c++/5/new
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/features.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/libio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/linux/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/math.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/stdc-predef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/string.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/include/xlocale.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/syslimits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdarg.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stddef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/cuda.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/device_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/driver_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/library_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: /usr/local/cuda-9.0/include/vector_types.h
+CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o.depend
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o: util/cuda/cudaRGB.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o"
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaRGB.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaRGB.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o"
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaRGB.cu.o -D generated_cubin_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaRGB.cu.o.cubin.txt -P /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o.cmake
 
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: util/cuda/cudaUtility.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: util/cuda/cudaYUV-NV12.cu
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: util/cuda/cudaYUV.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/_G_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap-16.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/byteswap.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_val.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_valf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/huge_vall.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/inf.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/local_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/math-vector.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/mathcalls.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/mathdef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/mathinline.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/nan.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/posix1_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/posix2_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/select2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/sigset.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio2.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/string3.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/sys_errlist.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/timex.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/typesizes.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/waitflags.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/waitstatus.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/wordsize.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/c++config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/cpu_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/c++/5/bits/os_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/gnu/stubs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/sys/cdefs.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/sys/select.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/sys/sysmacros.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/aarch64-linux-gnu/sys/types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/alloca.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/assert.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/c++/5/bits/exception_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/c++/5/bits/exception_ptr.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/c++/5/bits/nested_exception.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/c++/5/cmath
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/c++/5/cstdlib
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/c++/5/exception
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/c++/5/ext/type_traits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/c++/5/new
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/endian.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/features.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/libio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/linux/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/math.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/stdc-predef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/stdio.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/stdlib.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/string.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/time.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/wchar.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/include/xlocale.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/limits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include-fixed/syslimits.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdarg.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stddef.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/lib/gcc/aarch64-linux-gnu/5/include/stdint.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/cuda.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/device_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/device_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/driver_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/host_config.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/host_defines.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/library_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/surface_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/texture_types.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
-CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: /usr/local/cuda-9.0/include/vector_types.h
+CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o.depend
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o.cmake
 CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o: util/cuda/cudaYUV-NV12.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o"
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/.
-	cd /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-NV12.cu.o -D generated_cubin_file:STRING=/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-NV12.cu.o.cubin.txt -P /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building NVCC (Device) object CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o"
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -E make_directory /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/.
+	cd /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-NV12.cu.o -D generated_cubin_file:STRING=/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/./inferLib_generated_cudaYUV-NV12.cu.o.cubin.txt -P /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o.cmake
 
 CMakeFiles/inferLib.dir/tensorNet.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/tensorNet.cpp.o: tensorNet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/inferLib.dir/tensorNet.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/tensorNet.cpp.o -c /home/nvidia/Pelee-TensorRT/tensorNet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/inferLib.dir/tensorNet.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/tensorNet.cpp.o -c /home/nvidia/TRT-Pelee/tensorNet.cpp
 
 CMakeFiles/inferLib.dir/tensorNet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/tensorNet.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/tensorNet.cpp > CMakeFiles/inferLib.dir/tensorNet.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/TRT-Pelee/tensorNet.cpp > CMakeFiles/inferLib.dir/tensorNet.cpp.i
 
 CMakeFiles/inferLib.dir/tensorNet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/tensorNet.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/tensorNet.cpp -o CMakeFiles/inferLib.dir/tensorNet.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/TRT-Pelee/tensorNet.cpp -o CMakeFiles/inferLib.dir/tensorNet.cpp.s
 
 CMakeFiles/inferLib.dir/tensorNet.cpp.o.requires:
 
@@ -1573,16 +146,16 @@ CMakeFiles/inferLib.dir/tensorNet.cpp.o.provides.build: CMakeFiles/inferLib.dir/
 
 CMakeFiles/inferLib.dir/common.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/common.cpp.o: common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/inferLib.dir/common.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/common.cpp.o -c /home/nvidia/Pelee-TensorRT/common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/inferLib.dir/common.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/common.cpp.o -c /home/nvidia/TRT-Pelee/common.cpp
 
 CMakeFiles/inferLib.dir/common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/common.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/common.cpp > CMakeFiles/inferLib.dir/common.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/TRT-Pelee/common.cpp > CMakeFiles/inferLib.dir/common.cpp.i
 
 CMakeFiles/inferLib.dir/common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/common.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/common.cpp -o CMakeFiles/inferLib.dir/common.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/TRT-Pelee/common.cpp -o CMakeFiles/inferLib.dir/common.cpp.s
 
 CMakeFiles/inferLib.dir/common.cpp.o.requires:
 
@@ -1597,16 +170,16 @@ CMakeFiles/inferLib.dir/common.cpp.o.provides.build: CMakeFiles/inferLib.dir/com
 
 CMakeFiles/inferLib.dir/main.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/inferLib.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/main.cpp.o -c /home/nvidia/Pelee-TensorRT/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/inferLib.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/main.cpp.o -c /home/nvidia/TRT-Pelee/main.cpp
 
 CMakeFiles/inferLib.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/main.cpp > CMakeFiles/inferLib.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/TRT-Pelee/main.cpp > CMakeFiles/inferLib.dir/main.cpp.i
 
 CMakeFiles/inferLib.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/main.cpp -o CMakeFiles/inferLib.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/TRT-Pelee/main.cpp -o CMakeFiles/inferLib.dir/main.cpp.s
 
 CMakeFiles/inferLib.dir/main.cpp.o.requires:
 
@@ -1621,16 +194,16 @@ CMakeFiles/inferLib.dir/main.cpp.o.provides.build: CMakeFiles/inferLib.dir/main.
 
 CMakeFiles/inferLib.dir/mathFunctions.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/mathFunctions.cpp.o: mathFunctions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/inferLib.dir/mathFunctions.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/mathFunctions.cpp.o -c /home/nvidia/Pelee-TensorRT/mathFunctions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/inferLib.dir/mathFunctions.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/mathFunctions.cpp.o -c /home/nvidia/TRT-Pelee/mathFunctions.cpp
 
 CMakeFiles/inferLib.dir/mathFunctions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/mathFunctions.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/mathFunctions.cpp > CMakeFiles/inferLib.dir/mathFunctions.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/TRT-Pelee/mathFunctions.cpp > CMakeFiles/inferLib.dir/mathFunctions.cpp.i
 
 CMakeFiles/inferLib.dir/mathFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/mathFunctions.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/mathFunctions.cpp -o CMakeFiles/inferLib.dir/mathFunctions.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/TRT-Pelee/mathFunctions.cpp -o CMakeFiles/inferLib.dir/mathFunctions.cpp.s
 
 CMakeFiles/inferLib.dir/mathFunctions.cpp.o.requires:
 
@@ -1645,16 +218,16 @@ CMakeFiles/inferLib.dir/mathFunctions.cpp.o.provides.build: CMakeFiles/inferLib.
 
 CMakeFiles/inferLib.dir/pluginImplement.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/pluginImplement.cpp.o: pluginImplement.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/inferLib.dir/pluginImplement.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/pluginImplement.cpp.o -c /home/nvidia/Pelee-TensorRT/pluginImplement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/inferLib.dir/pluginImplement.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/pluginImplement.cpp.o -c /home/nvidia/TRT-Pelee/pluginImplement.cpp
 
 CMakeFiles/inferLib.dir/pluginImplement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/pluginImplement.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/pluginImplement.cpp > CMakeFiles/inferLib.dir/pluginImplement.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/TRT-Pelee/pluginImplement.cpp > CMakeFiles/inferLib.dir/pluginImplement.cpp.i
 
 CMakeFiles/inferLib.dir/pluginImplement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/pluginImplement.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/pluginImplement.cpp -o CMakeFiles/inferLib.dir/pluginImplement.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/TRT-Pelee/pluginImplement.cpp -o CMakeFiles/inferLib.dir/pluginImplement.cpp.s
 
 CMakeFiles/inferLib.dir/pluginImplement.cpp.o.requires:
 
@@ -1669,16 +242,16 @@ CMakeFiles/inferLib.dir/pluginImplement.cpp.o.provides.build: CMakeFiles/inferLi
 
 CMakeFiles/inferLib.dir/util/loadImage.cpp.o: CMakeFiles/inferLib.dir/flags.make
 CMakeFiles/inferLib.dir/util/loadImage.cpp.o: util/loadImage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/inferLib.dir/util/loadImage.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/util/loadImage.cpp.o -c /home/nvidia/Pelee-TensorRT/util/loadImage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/inferLib.dir/util/loadImage.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/inferLib.dir/util/loadImage.cpp.o -c /home/nvidia/TRT-Pelee/util/loadImage.cpp
 
 CMakeFiles/inferLib.dir/util/loadImage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inferLib.dir/util/loadImage.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/Pelee-TensorRT/util/loadImage.cpp > CMakeFiles/inferLib.dir/util/loadImage.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nvidia/TRT-Pelee/util/loadImage.cpp > CMakeFiles/inferLib.dir/util/loadImage.cpp.i
 
 CMakeFiles/inferLib.dir/util/loadImage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inferLib.dir/util/loadImage.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/Pelee-TensorRT/util/loadImage.cpp -o CMakeFiles/inferLib.dir/util/loadImage.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nvidia/TRT-Pelee/util/loadImage.cpp -o CMakeFiles/inferLib.dir/util/loadImage.cpp.s
 
 CMakeFiles/inferLib.dir/util/loadImage.cpp.o.requires:
 
@@ -1702,15 +275,15 @@ inferLib_OBJECTS = \
 
 # External object files for target inferLib
 inferLib_EXTERNAL_OBJECTS = \
-"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o" \
-"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o" \
-"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o" \
-"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o" \
-"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o" \
-"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o" \
-"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o" \
-"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o" \
-"/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o"
+"/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/inferLib_generated_mathFunctions.cu.o" \
+"/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/inferLib_generated_kernel.cu.o" \
+"/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaNormalize.cu.o" \
+"/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YUYV.cu.o" \
+"/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaResize.cu.o" \
+"/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-YV12.cu.o" \
+"/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o" \
+"/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o" \
+"/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o"
 
 build/lib/libinferLib.so: CMakeFiles/inferLib.dir/tensorNet.cpp.o
 build/lib/libinferLib.so: CMakeFiles/inferLib.dir/common.cpp.o
@@ -1735,7 +308,7 @@ build/lib/libinferLib.so: /usr/lib/aarch64-linux-gnu/libnvinfer.so
 build/lib/libinferLib.so: /usr/lib/aarch64-linux-gnu/libnvinfer_plugin.so
 build/lib/libinferLib.so: /usr/lib/aarch64-linux-gnu/libnvparsers.so
 build/lib/libinferLib.so: CMakeFiles/inferLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nvidia/Pelee-TensorRT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library build/lib/libinferLib.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nvidia/TRT-Pelee/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library build/lib/libinferLib.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/inferLib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1765,6 +338,6 @@ CMakeFiles/inferLib.dir/depend: CMakeFiles/inferLib.dir/util/cuda/inferLib_gener
 CMakeFiles/inferLib.dir/depend: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaOverlay.cu.o
 CMakeFiles/inferLib.dir/depend: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaRGB.cu.o
 CMakeFiles/inferLib.dir/depend: CMakeFiles/inferLib.dir/util/cuda/inferLib_generated_cudaYUV-NV12.cu.o
-	cd /home/nvidia/Pelee-TensorRT && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/Pelee-TensorRT /home/nvidia/Pelee-TensorRT /home/nvidia/Pelee-TensorRT /home/nvidia/Pelee-TensorRT /home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nvidia/TRT-Pelee && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/TRT-Pelee /home/nvidia/TRT-Pelee /home/nvidia/TRT-Pelee /home/nvidia/TRT-Pelee /home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/inferLib.dir/depend
 

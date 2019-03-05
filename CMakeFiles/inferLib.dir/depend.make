@@ -210,6 +210,7 @@ CMakeFiles/inferLib.dir/pluginImplement.cpp.o: /usr/local/cuda-9.0/include/vecto
 CMakeFiles/inferLib.dir/pluginImplement.cpp.o: /usr/local/cuda-9.0/include/vector_functions.hpp
 CMakeFiles/inferLib.dir/pluginImplement.cpp.o: /usr/local/cuda-9.0/include/vector_types.h
 
+CMakeFiles/inferLib.dir/tensorNet.cpp.o: common.h
 CMakeFiles/inferLib.dir/tensorNet.cpp.o: pluginImplement.h
 CMakeFiles/inferLib.dir/tensorNet.cpp.o: tensorNet.cpp
 CMakeFiles/inferLib.dir/tensorNet.cpp.o: tensorNet.h

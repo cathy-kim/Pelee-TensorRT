@@ -126,8 +126,7 @@
 
 //                 return 0;
 //             }
-  
-
+ 
 //     return 0;
 // }
 
@@ -169,42 +168,6 @@
 //     d[0] = dimsConv4_3.c(); d[1] = dimsConv4_3.h(); d[2] = dimsConv4_3.w();
 //     d[3] = dimsFc7.c(); d[4] = dimsFc7.h(); d[5] = dimsFc7.w();
 //     d[6] = dimsConv6.c(); d[7] = dimsConv6.h(); d[8] = dimsConv6.w();
-//     d[9] = dimsConv7.c(); d[10] = dimsConv7.h(); d[11] = dimsConv7.w();
-//     d[12] = dimsConv8.c(); d[13] = dimsConv8.h(); d[14] = dimsConv8.w();
-//     d[15] = dimsConv9.c(); d[16] = dimsConv9.h(); d[17] = dimsConv9.w();
-// }
-
-// void ConcatPlugin::configure(const Dims*inputs, int nbInputs, const Dims* outputs, int nbOutputs, int)
-// {
-//     dimsConv4_3 = DimsCHW{inputs[0].d[0], inputs[0].d[1], inputs[0].d[2]};
-//     dimsFc7 = DimsCHW{inputs[1].d[0], inputs[1].d[1], inputs[1].d[2]};
-//     dimsConv6 = DimsCHW{inputs[2].d[0], inputs[2].d[1], inputs[2].d[2]};
-//     dimsConv7 = DimsCHW{inputs[3].d[0], inputs[3].d[1], inputs[3].d[2]};
-//     dimsConv8 = DimsCHW{inputs[4].d[0], inputs[4].d[1], inputs[4].d[2]};
-//     dimsConv9 = DimsCHW{inputs[5].d[0], inputs[5].d[1], inputs[5].d[2]};
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -330,18 +293,57 @@ nvinfer1::IPlugin* PluginFactory::createPlugin(const char* layerName, const nvin
     {
         std::cout << layerName << std::endl;
         assert(mExt_pm1_mbox_priorbox_layer.get() == nullptr);
-        float min_size = 21.2800006866, max_size = 45.5999984741, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        PriorBoxParameters params; 
+        float min_size[1] = {21.2800006866}, max_size[1] = {45.5999984741}, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        params.minSize=min_size;
+        params.aspectRatios=aspect_ratio;
+        params.numMinSize = 1;
+        params.numAspectRatios = 3;
+        params.maxSize = max_size;
+        params.numMaxSize = 1;
+        params.flip = true;
+        params.clip = false;
+        params.variance[0] = 0.1;
+        params.variance[1] = 0.1;
+        params.variance[2] = 0.2;
+        params.variance[3] = 0.2;
+        params.imgH = 0;
+        params.imgW = 0;
+        params.stepH = 0;
+        params.stepW = 0;
+        params.offset = 0.5;
         mExt_pm1_mbox_priorbox_layer = std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)>
-                (createSSDPriorBoxPlugin({&min_size, &max_size, aspect_ratio, 1, 1, 3, true, false, {0.1, 0.1, 0.2, 0.2}, 0, 0, 0, 0, 0.5}), nvPluginDeleter);
+                (createSSDPriorBoxPlugin(params), nvPluginDeleter);
         return mExt_pm1_mbox_priorbox_layer.get();
     }
       else if (!strcmp(layerName, "ext/pm2_mbox_priorbox"))
     {
         std::cout << layerName << std::endl;
         assert(mExt_pm2_mbox_priorbox_layer.get() == nullptr);
-        float min_size = 45.5999984741, max_size = 100.319999695, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        float min_size[1] = {45.6}, max_size[1] = {100.32}, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        PriorBoxParameters params; 
+        params.minSize=min_size;
+        params.aspectRatios=aspect_ratio;
+        params.numMinSize = 1;
+        params.numAspectRatios = 3;
+        params.maxSize = max_size;
+        params.numMaxSize = 1;
+        params.flip = true;
+        params.clip = false;
+        params.variance[0] = 0.1;
+        params.variance[1] = 0.1;
+        params.variance[2] = 0.2;
+        params.variance[3] = 0.2;
+        params.imgH = 0;
+        params.imgW = 0;
+        params.stepH = 0;
+        params.stepW = 0;
+        params.offset = 0.5;
+
+
+
         mExt_pm2_mbox_priorbox_layer = std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)>
-                (createSSDPriorBoxPlugin({&min_size, &max_size, aspect_ratio, 1, 1, 3, true, false, {0.1, 0.1, 0.2, 0.2}, 0, 0, 0, 0, 0.5}), nvPluginDeleter);
+                (createSSDPriorBoxPlugin(params), nvPluginDeleter);
         return mExt_pm2_mbox_priorbox_layer.get();
     }
 
@@ -349,9 +351,28 @@ nvinfer1::IPlugin* PluginFactory::createPlugin(const char* layerName, const nvin
     {
         std::cout << layerName << std::endl;
         assert(mExt_pm3_mbox_priorbox_layer.get() == nullptr);
-        float min_size = 100.319999695, max_size = 155.039993286, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        float min_size[1] = {100.32}, max_size[1] = {155.04}, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        PriorBoxParameters params; 
+        params.minSize=min_size;
+        params.aspectRatios=aspect_ratio;
+        params.numMinSize = 1;
+        params.numAspectRatios = 3;
+        params.maxSize = max_size;
+        params.numMaxSize = 1;
+        params.flip = true;
+        params.clip = false;
+        params.variance[0] = 0.1;
+        params.variance[1] = 0.1;
+        params.variance[2] = 0.2;
+        params.variance[3] = 0.2;
+        params.imgH = 0;
+        params.imgW = 0;
+        params.stepH = 0;
+        params.stepW = 0;
+        params.offset = 0.5;
+
         mExt_pm3_mbox_priorbox_layer = std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)>
-                (createSSDPriorBoxPlugin({&min_size, &max_size, aspect_ratio, 1, 1, 3, true, false, {0.1, 0.1, 0.2, 0.2}, 0, 0, 0, 0, 0.5}), nvPluginDeleter);
+                (createSSDPriorBoxPlugin(params), nvPluginDeleter);
         return mExt_pm3_mbox_priorbox_layer.get();
     }
 
@@ -359,9 +380,27 @@ nvinfer1::IPlugin* PluginFactory::createPlugin(const char* layerName, const nvin
     {
         std::cout << layerName << std::endl;
         assert(mExt_pm4_mbox_priorbox_layer.get() == nullptr);
-        float min_size = 155.039993286, max_size = 209.759994507, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        float min_size[1] = {155.04}, max_size[1] = {209.76}, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        PriorBoxParameters params; 
+        params.minSize=min_size;
+        params.aspectRatios=aspect_ratio;
+        params.numMinSize = 1;
+        params.numAspectRatios = 3;
+        params.maxSize = max_size;
+        params.numMaxSize = 1;
+        params.flip = true;
+        params.clip = false;
+        params.variance[0] = 0.1;
+        params.variance[1] = 0.1;
+        params.variance[2] = 0.2;
+        params.variance[3] = 0.2;
+        params.imgH = 0;
+        params.imgW = 0;
+        params.stepH = 0;
+        params.stepW = 0;
+        params.offset = 0.5;
         mExt_pm4_mbox_priorbox_layer = std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)>
-                (createSSDPriorBoxPlugin({&min_size, &max_size, aspect_ratio, 1, 1, 3, true, false, {0.1, 0.1, 0.2, 0.2}, 0, 0, 0, 0, 0.5}), nvPluginDeleter);
+                (createSSDPriorBoxPlugin(params), nvPluginDeleter);
         return mExt_pm4_mbox_priorbox_layer.get();
     }
 
@@ -369,9 +408,27 @@ nvinfer1::IPlugin* PluginFactory::createPlugin(const char* layerName, const nvin
     {
         std::cout << layerName << std::endl;
         assert(mExt_pm5_mbox_priorbox_layer.get() == nullptr);
-        float min_size = 209.759994507, max_size = 264.480010986, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        float min_size[1]= {209.76}, max_size[1]= {264.48}, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        PriorBoxParameters params; 
+        params.minSize=min_size;
+        params.aspectRatios=aspect_ratio;
+        params.numMinSize = 1;
+        params.numAspectRatios = 3;
+        params.maxSize = max_size;
+        params.numMaxSize = 1;
+        params.flip = true;
+        params.clip = false;
+        params.variance[0] = 0.1;
+        params.variance[1] = 0.1;
+        params.variance[2] = 0.2;
+        params.variance[3] = 0.2;
+        params.imgH = 0;
+        params.imgW = 0;
+        params.stepH = 0;
+        params.stepW = 0;
+        params.offset = 0.5;
         mExt_pm5_mbox_priorbox_layer = std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)>
-                (createSSDPriorBoxPlugin({&min_size, &max_size, aspect_ratio, 1, 1, 3, true, false, {0.1, 0.1, 0.2, 0.2}, 0, 0, 0, 0, 0.5}), nvPluginDeleter);
+                (createSSDPriorBoxPlugin(params), nvPluginDeleter);
         return mExt_pm5_mbox_priorbox_layer.get();
     }
 
@@ -379,9 +436,28 @@ nvinfer1::IPlugin* PluginFactory::createPlugin(const char* layerName, const nvin
     {
         std::cout << layerName << std::endl;
         assert(mExt_pm6_mbox_priorbox_layer.get() == nullptr);
-        float min_size = 264.480010986, max_size = 319.200012207, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        float min_size[1] = {264.48}, max_size[1] = {319.20}, aspect_ratio[3] = {1.0, 2.0, 3.0}; //aspect_ratio[2] = {1.0, 2.0}; 
+        PriorBoxParameters params; 
+        params.minSize=min_size;
+        params.aspectRatios=aspect_ratio;
+        params.numMinSize = 1;
+        params.numAspectRatios = 3;
+        params.maxSize = max_size;
+        params.numMaxSize = 1;
+        params.flip = true;
+        params.clip = false;
+        params.variance[0] = 0.1;
+        params.variance[1] = 0.1;
+        params.variance[2] = 0.2;
+        params.variance[3] = 0.2;
+        params.imgH = 0;
+        params.imgW = 0;
+        params.stepH = 0;
+        params.stepW = 0;
+        params.offset = 0.5;
+
         mExt_pm6_mbox_priorbox_layer = std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)>
-                (createSSDPriorBoxPlugin({&min_size, &max_size, aspect_ratio, 1, 1, 3, true, false, {0.1, 0.1, 0.2, 0.2}, 0, 0, 0, 0, 0.5}), nvPluginDeleter);
+                (createSSDPriorBoxPlugin(params), nvPluginDeleter);
         return mExt_pm6_mbox_priorbox_layer.get();
     }
 
@@ -711,11 +787,29 @@ nvinfer1::IPlugin* PluginFactory::createPlugin(const char* layerName, const nvin
         //tensor rt 3.0 
         //mDetection_out = std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)>(createSSDDetectionOutputPlugin({true, false, 0, 21, 400, 200, 0.5, 0.45, CodeType_t::CENTER_SIZE}), nvPluginDeleter);
         //tensor rt 5
-       
+
+
+
+        DetectionOutputParameters params;
+        params.backgroundLabelId = 0;
+        params.codeType = CodeTypeSSD::CENTER_SIZE;
+        params.keepTopK = 200;
+        params.shareLocation = true;
+        params.varianceEncodedInTarget = false;
+        params.topK = 400;
+        params.nmsThreshold = 0.4499;
+        params.numClasses = 21;
+        params.inputOrder[0] = 0;
+        params.inputOrder[1] = 1;
+        params.inputOrder[2] = 2;
+        params.confidenceThreshold = 0.4;
+        params.confSigmoid = false;
+        params.isNormalized = true;
+
+
 
         mDetection_out = std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)>
-                (createSSDDetectionOutputPlugin({true, false, 0, 21, 400, 200, 0.449999, 0.49999, 
-                    CodeTypeSSD::CENTER_SIZE,{0,1,2},false,true}), nvPluginDeleter);
+                (createSSDDetectionOutputPlugin(params), nvPluginDeleter);
         return mDetection_out.get();
     }
     else

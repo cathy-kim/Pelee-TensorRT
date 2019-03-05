@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nvidia/Pelee-TensorRT/main.cpp" "/home/nvidia/Pelee-TensorRT/CMakeFiles/pelee.dir/main.cpp.o"
+  "/home/nvidia/TRT-Pelee/main.cpp" "/home/nvidia/TRT-Pelee/CMakeFiles/pelee.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,7 +18,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/DependInfo.cmake"
+  "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

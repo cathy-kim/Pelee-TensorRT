@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nvidia/Pelee-TensorRT/build/include/util -I/home/nvidia/Pelee-TensorRT/util -isystem /usr/include/opencv -I/usr/local/cuda-9.0/include 
+CXX_INCLUDES = -I/home/nvidia/TRT-Pelee/build/include/util -I/home/nvidia/TRT-Pelee/util -isystem /usr/include/opencv -I/usr/local/cuda-9.0/include 
 

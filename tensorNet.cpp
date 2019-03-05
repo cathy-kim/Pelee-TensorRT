@@ -98,7 +98,8 @@ bool TensorNet::caffeToTRTModel(const char* deployFile,
     ICaffeParser* parser = createCaffeParser();
     parser->setPluginFactory(&pluginFactory);
     //builder->setFp16Mode(true);
-    bool useFp16 = true;//builder->platformHasFastFp16();
+    bool useFp16 = false;
+    //builder->platformHasFastFp16();
     //@Seojin to fp16 
     //useFp16 = true; 
 

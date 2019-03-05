@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nvidia/Pelee-TensorRT/common.cpp" "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/common.cpp.o"
-  "/home/nvidia/Pelee-TensorRT/main.cpp" "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/main.cpp.o"
-  "/home/nvidia/Pelee-TensorRT/mathFunctions.cpp" "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/mathFunctions.cpp.o"
-  "/home/nvidia/Pelee-TensorRT/pluginImplement.cpp" "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/pluginImplement.cpp.o"
-  "/home/nvidia/Pelee-TensorRT/tensorNet.cpp" "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/tensorNet.cpp.o"
-  "/home/nvidia/Pelee-TensorRT/util/loadImage.cpp" "/home/nvidia/Pelee-TensorRT/CMakeFiles/inferLib.dir/util/loadImage.cpp.o"
+  "/home/nvidia/TRT-Pelee/common.cpp" "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/common.cpp.o"
+  "/home/nvidia/TRT-Pelee/main.cpp" "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/main.cpp.o"
+  "/home/nvidia/TRT-Pelee/mathFunctions.cpp" "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/mathFunctions.cpp.o"
+  "/home/nvidia/TRT-Pelee/pluginImplement.cpp" "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/pluginImplement.cpp.o"
+  "/home/nvidia/TRT-Pelee/tensorNet.cpp" "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/tensorNet.cpp.o"
+  "/home/nvidia/TRT-Pelee/util/loadImage.cpp" "/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir/util/loadImage.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
