@@ -5,6 +5,10 @@
 
 ---
 
+**Performance:**
+FP32: 72 FPS, 13.8 ms 
+
+
 **Requierments:**
 
 1.TensorRT4
