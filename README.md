@@ -6,7 +6,7 @@
 ---
 
 **Performance:**
-FP32: 72 FPS, 13.8 ms 
+72 FPS, 13.8 ms (FP32)
 
 
 **Requierments:**
