@@ -3,7 +3,7 @@
 **Accelerate Pelee with tensorRT**
 Pelee: A Real-Time Object Detection System on Mobile Devices (NeurIPS 2018) 
 
-**TensorRT-Pelee can run over 70fps on jetson TX2(FP32)**
+**TensorRT-Pelee can run over 200FPS on Titan V and 70FPS on jetson TX2(FP32)**
 
 ---
 
