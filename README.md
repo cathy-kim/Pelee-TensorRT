@@ -9,6 +9,10 @@ Pelee: A Real-Time Object Detection System on Mobile Devices (NeurIPS 2018)
 
 **Performance:**
 72 FPS, 13.8 ms (FP32)
+**GPU Time:**
+
+**Time by layers:**
+
 
 
 **Requierments:**
