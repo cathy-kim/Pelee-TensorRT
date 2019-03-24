@@ -17,13 +17,11 @@ Pelee: A Real-Time Object Detection System on Mobile Devices (NeurIPS 2018)
 
 **Requierments:**
 
-1.TensorRT4
+1.TensorRT4 (Jetpack 3.3 on TX2) 
 
 2.CUDA 9.0
 
 3.cudnn7
-
-4.Jetpack 3.3(on TX2) 
 
 ---
 
