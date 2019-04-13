@@ -181,20 +181,6 @@ public:
 	//if(mDataType == DataType::kFLOAT){ //FP32 
 	  cudaSoftmax( 8732*21, 21, (float *) *inputs, static_cast<float *>(*outputs));
 
-	//}
-	/*
-	else{
-	  cudaSoftmax( 8732*21, 21, (__half *) *inputs, static_cast<__half *>(*outputs));
-	} 
-	*/
-	/*
-	else{  //FP16 
-	    cudaSoftmax( 8732*21, 21, 
-		(__half *) *inputs, 
-		static_cast<__half*>(*outputs));
-	} */ 
-        //cudaSoftmax( 8732*21, 21, (float *) *inputs, static_cast<float *>(*outputs));
-
         return 0;
     }
 
@@ -289,44 +275,6 @@ protected:
     int _size;
 };
 
-/*
-//Concat layer . TensorRT Concat only support cross channel
-class ConcatPlugin : public IPlugin
-{
-public:
-    ConcatPlugin(int axis){
-     // _inputs_size = inputs_size;
-     _axis = axis;  
-        // ConcatPlugin(axis,flag);
-    }; 
-    ConcatPlugin(int axis, const void* buffer, size_t size);
-
-    inline int getNbOutputs() const override {return 1;};
-    Dims getOutputDimensions(int index, const Dims* inputs, int nbInputDims) override ;
-    int initialize() override;
-    inline void terminate() override;
-
-    inline size_t getWorkspaceSize(int) const override { return 0; };
-    int enqueue(int batchSize, const void*const *inputs, void** outputs, void*, cudaStream_t stream) override;
-
-    size_t getSerializationSize() override;
-    void serialize(void* buffer) override;
-
-    void configure(const Dims*inputs, int nbInputs, const Dims* outputs, int nbOutputs, int) override;
-
-protected:
-
-    DimsCHW dimsConv4_3;
-    DimsCHW dimsFc7;
-    DimsCHW dimsConv6;
- 
-*/
-
-
-
-
-
-
 
 class PluginFactory : public nvinfer1::IPluginFactory, public nvcaffeparser1::IPluginFactory
 {
@@ -392,12 +340,6 @@ public:
     std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mBox_conf_layer{ nullptr, nvPluginDeleter };
     std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mBox_priorbox_layer{ nullptr, nvPluginDeleter };
    
-
-
-
-
-
-
     //reshape layer
     std::unique_ptr<Reshape<21>> mMbox_conf_reshape{ nullptr };
     //flatten layers
