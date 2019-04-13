@@ -121,9 +121,6 @@ int main(int argc, char *argv[])
     void* imgCUDA;
     Timer timer;
 
-    //std::string imgFile = "/home/nvidia/MobileNet-SSD-TensorRT/testPic/000005.jpg";
-    //frame = cv::imread(imgFile,cv::IMREAD_COLOR);
-
     std::thread readTread(readPicture);
     readTread.detach();
     while(1){
