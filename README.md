@@ -13,9 +13,9 @@ Titan V:  200FPS, 5 ms (FP32)<br>
 
 **Requierments:**
 
-1.TensorRT4 (Jetpack 3.3 on TX2) 
-2.CUDA 9.0
-3.cudnn7
+1.TensorRT4 (Jetpack 3.3 on TX2)  <br>
+2.CUDA 9.0 <br>
+3.cudnn7 <br>
 
 ---
 
