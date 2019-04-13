@@ -7,7 +7,7 @@ Pelee: A Real-Time Object Detection System on Mobile Devices (NeurIPS 2018)
 
 ---
 
-**Performance:**
+**Performance:**<br>
 Jetson TX2: 72 FPS, 13.8 ms (FP32) <br>
 Titan V:  200FPS, 5 ms (FP32)<br>
 
