@@ -339,23 +339,7 @@ public:
     bool isPlugin(const char* name) override;
     void destroyPlugin();
 
-    //normalize layer
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mNormalizeLayer{ nullptr, nvPluginDeleter };
-
-    //permute layers
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv4_3_norm_mbox_conf_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv4_3_norm_mbox_loc_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mFc7_mbox_conf_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mFc7_mbox_loc_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv6_2_mbox_conf_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv6_2_mbox_loc_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv7_2_mbox_conf_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv7_2_mbox_loc_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv8_2_mbox_conf_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv8_2_mbox_loc_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv9_2_mbox_conf_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv9_2_mbox_loc_perm_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mBox_conf_reshape_perm_layer{ nullptr, nvPluginDeleter };
+   
     //pelee
     std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mExt_pm1_mbox_loc_perm_layer{ nullptr, nvPluginDeleter };
     std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mExt_pm1_mbox_conf_perm_layer{ nullptr, nvPluginDeleter };
@@ -370,20 +354,6 @@ public:
     std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mExt_pm6_mbox_loc_perm_layer{ nullptr, nvPluginDeleter };
     std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mExt_pm6_mbox_conf_perm_layer{ nullptr, nvPluginDeleter };
 
-
-
-
-
-
-
-    //priorbox layers
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv4_3_norm_mbox_priorbox_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mFc7_mbox_priorbox_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv6_2_mbox_priorbox_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv7_2_mbox_priorbox_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv8_2_mbox_priorbox_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mConv9_2_mbox_priorbox_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mPool6_mbox_priorbox_layer{ nullptr, nvPluginDeleter };
     //pelee 
     std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mExt_pm1_mbox_priorbox_layer{ nullptr, nvPluginDeleter };
     std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mExt_pm2_mbox_priorbox_layer{ nullptr, nvPluginDeleter };
@@ -394,10 +364,6 @@ public:
 
     //detection output layer
     std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mDetection_out{ nullptr, nvPluginDeleter };
-    //concat layers
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mBox_loc_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mBox_conf_layer{ nullptr, nvPluginDeleter };
-    // std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mBox_priorbox_layer{ nullptr, nvPluginDeleter };
     //pelee 
     std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mStem_concat_layer{ nullptr, nvPluginDeleter };
     std::unique_ptr<INvPlugin, decltype(nvPluginDeleter)> mStage1_1_concat_layer{ nullptr, nvPluginDeleter };
@@ -435,18 +401,6 @@ public:
     //reshape layer
     std::unique_ptr<Reshape<21>> mMbox_conf_reshape{ nullptr };
     //flatten layers
-    // std::unique_ptr<FlattenLayer> mConv4_3_norm_mbox_conf_flat_layer{ nullptr };
-    // std::unique_ptr<FlattenLayer> mConv4_3_norm_mbox_loc_flat_layer{ nullptr };
-    // std::unique_ptr<FlattenLayer> mFc7_mbox_conf_flat_layer{ nullptr };
-    // std::unique_ptr<FlattenLayer> mFc7_mbox_loc_flat_layer{ nullptr };
-    // std::unique_ptr<FlattenLayer> mConv6_2_mbox_conf_flat_layer{ nullptr };
-    // std::unique_ptr<FlattenLayer> mConv6_2_mbox_loc_flat_layer{ nullptr };
-    // std::unique_ptr<FlattenLayer> mConv7_2_mbox_conf_flat_layer{ nullptr };
-    // std::unique_ptr<FlattenLayer> mConv7_2_mbox_loc_flat_layer{ nullptr };
-    // std::unique_ptr<FlattenLayer> mConv8_2_mbox_conf_flat_layer{ nullptr };
-    // std::unique_ptr<FlattenLayer> mConv8_2_mbox_loc_flat_layer{ nullptr };
-    // std::unique_ptr<FlattenLayer> mConv9_2_mbox_conf_flat_layer{ nullptr };
-    // std::unique_ptr<FlattenLayer> mConv9_2_mbox_loc_flat_layer{ nullptr };
     //pelee 
     std::unique_ptr<FlattenLayer> mExt_pm1_mbox_loc_flat_layer{ nullptr };
     std::unique_ptr<FlattenLayer> mExt_pm1_mbox_conf_flat_layer{ nullptr };
