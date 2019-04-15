@@ -1,8 +1,0 @@
-/home/nvidia/TRT-Pelee/CMakeFiles/install.dir
-/home/nvidia/TRT-Pelee/CMakeFiles/list_install_components.dir
-/home/nvidia/TRT-Pelee/CMakeFiles/rebuild_cache.dir
-/home/nvidia/TRT-Pelee/CMakeFiles/edit_cache.dir
-/home/nvidia/TRT-Pelee/CMakeFiles/inferLib.dir
-/home/nvidia/TRT-Pelee/CMakeFiles/pelee.dir
-/home/nvidia/TRT-Pelee/CMakeFiles/install/local.dir
-/home/nvidia/TRT-Pelee/CMakeFiles/install/strip.dir
