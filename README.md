@@ -11,7 +11,7 @@ Pelee: A Real-Time Object Detection System on Mobile Devices (NeurIPS 2018)
 1. NVIDIA Jetson TX2: 72 FPS (13.2~11 ms) <br>
 2. Titan V:  200 FPS (5 ms) <br>
 
-**Requierments:** <br> 
+**Requirements:** <br> 
 1. TensorRT 4.x (Jetpack 3.3) <br>
 2. CUDA 9.0 <br>
 3. cudnn 7. <br>
