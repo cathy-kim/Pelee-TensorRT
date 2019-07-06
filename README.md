@@ -1,5 +1,4 @@
-# Pelee-TensorRT
-
+# Pelee-TensorRT using Caffe Parser
 **Accelerate Pelee with TensorRT**
 Pelee: A Real-Time Object Detection System on Mobile Devices (NeurIPS 2018) 
 
