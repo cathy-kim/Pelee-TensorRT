@@ -25,11 +25,6 @@ make
 ./build/bin/pelee
 ```
 
----
-
-**Reference:**
-
-https://github.com/Ghustwb/MobileNet-SSD-TensorRT
 
 ---
 
